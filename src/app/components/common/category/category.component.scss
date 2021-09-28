@@ -1,6 +1,6 @@
 .single-category-box {
     margin-bottom: 35px;
-    box-shadow: 5px 5px #b2eaea;
+    box-shadow: 5px 5px #3caeac;
     border: 1px solid #96e3e3;
     border-radius: 5px;
     position: relative;
@@ -57,7 +57,7 @@
             border-color: var(--mainColor);
             color: var(--whiteColor);
             box-shadow: 5px 5px var(--mainColor);
-    
+
             .icon {
                 margin-top: 14px;
                 background-color: var(--whiteColor) !important;
@@ -128,7 +128,7 @@
     }
     .single-category-item {
         margin-bottom: 20px;
-        
+
         .image {
             i {
                 font-size: 35px;
@@ -159,6 +159,6 @@
 /* Min width 1550px */
 @media only screen and (min-width: 1550px) {
 
-    
+
 
 }

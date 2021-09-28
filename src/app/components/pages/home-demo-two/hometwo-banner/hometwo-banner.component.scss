@@ -13,7 +13,7 @@
     padding-right: 50px;
     margin: {
         left: auto;
-        top: 50px;
+        top: 0px;
     };
     h1 {
         font-size: 50px;
@@ -36,7 +36,7 @@
     form {
         margin-top: 40px;
         background-color: var(--whiteColor);
-        box-shadow: 5px 5px #30eded;
+        box-shadow: 5px 5px #3caeac;
         border-radius: 5px;
         padding: {
             left: 20px;
@@ -45,7 +45,7 @@
         .form-group {
             margin: 0;
             position: relative;
-            border-right: 1px solid #30eded;
+            border-right: 1px solid #3caeac;
             margin-left: 12px;
 
             label {
@@ -120,7 +120,7 @@
     .popular-search-list {
         padding-left: 0;
         list-style-type: none;
-        text-align: left;
+        text-align: right;
         margin: {
             bottom: 0;
             top: 25px;

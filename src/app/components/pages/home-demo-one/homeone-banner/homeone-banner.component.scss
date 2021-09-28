@@ -41,7 +41,7 @@
     form {
         margin-top: 40px;
         background-color: var(--whiteColor);
-        box-shadow: 5px 5px #30eded;
+        box-shadow: 5px 5px #3caeac;
         border-radius: 100px;
         padding: {
             left: 20px;
@@ -50,7 +50,7 @@
         .form-group {
             margin: 0;
             position: relative;
-            border-right: 1px solid #30eded;
+            border-right: 1px solid #3caeac;
             margin-left: 12px;
 
             label {
@@ -257,7 +257,7 @@
     }
     .main-banner-content {
         max-width: 100%;
-        
+
         h1 {
             font-size: 40px;
             margin-bottom: 18px;
@@ -345,6 +345,6 @@
 /* Min width 1550px */
 @media only screen and (min-width: 1550px) {
 
-    
+
 
 }
