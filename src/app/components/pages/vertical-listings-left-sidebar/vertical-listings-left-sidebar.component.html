@@ -39,7 +39,7 @@
 <!-- End Page Title Area -->
 
 <!-- Start Listings Area -->
-<section class="listings-area ptb-100">
+<section class="listings-area ptb-100" style="width: 90%;">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-12  d-none d-lg-block">
@@ -245,7 +245,11 @@
             </div>
 
             <div class=" col-lg-3 d-none d-lg-block">
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id tempore harum pariatur omnis recusandae facere, nulla esse veritatis quas nostrum aliquam corrupti atque, animi facilis sapiente velit iure numquam a.
+              <div class="my-google-map">
+                <google-map>
+                  <map-marker *ngFor="let marker of markers" [position]="marker.position"></map-marker>
+                </google-map>
+              </div>
 
             </div>
 

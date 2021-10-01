@@ -75,6 +75,7 @@ import { DashboardMyProfileComponent } from './components/pages/dashboard/dashbo
 import { DashboardAddListingsComponent } from './components/pages/dashboard/dashboard-add-listings/dashboard-add-listings.component';
 import { DashboardBookmarksComponent } from './components/pages/dashboard/dashboard-bookmarks/dashboard-bookmarks.component';
 import { DashboardMyListingsComponent } from './components/pages/dashboard/dashboard-my-listings/dashboard-my-listings.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
@@ -154,7 +155,8 @@ import { DashboardMyListingsComponent } from './components/pages/dashboard/dashb
     SelectDropDownModule,
     NgxTypedJsModule,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
