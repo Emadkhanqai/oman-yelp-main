@@ -42,7 +42,7 @@
 <section class="listings-area ptb-100">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-3 col-md-12">
                 <aside class="listings-widget-area">
                     <section class="widget widget_filters">
                         <h3 class="widget-title">Filters</h3>
@@ -51,7 +51,6 @@
                             <li><button type="button">$</button></li>
                             <li><button type="button">$$</button></li>
                             <li><button type="button">$$$</button></li>
-                            <li><button type="button">$$$$</button></li>
                         </ul>
                     </section>
 
@@ -179,7 +178,7 @@
                 </aside>
             </div>
 
-            <div class="col-lg-8 col-md-12">
+            <div class="col-lg-6 col-md-12">
                 <div class="listings-grid-sorting row align-items-center">
                     <div class="col-lg-5 col-md-6 result-count">
                         <p>We found <span class="count">9</span> listings available for you</p>
@@ -196,7 +195,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6" *ngFor="let Content of singleListingsBox | paginate: { itemsPerPage: 6, currentPage: gridListings }">
+                    <div class="col-xl-12 col-lg-12 col-md-12" *ngFor="let Content of singleListingsBox | paginate: { itemsPerPage: 6, currentPage: gridListings }">
                         <div class="single-listings-box">
                             <div class="listings-image">
                                 <div class="listings-image-slides">
@@ -245,6 +244,9 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-lg-3">ok</div>
+
         </div>
     </div>
 </section>
