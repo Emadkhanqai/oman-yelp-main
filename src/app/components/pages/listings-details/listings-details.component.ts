@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
@@ -8,7 +9,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class ListingsDetailsComponent implements OnInit {
 
-    constructor() { }
+    constructor(private scroller: ViewportScroller) { }
 
     ngOnInit(): void {
     }
@@ -149,6 +150,10 @@ export class ListingsDetailsComponent implements OnInit {
             "<i class='flaticon-left-chevron'></i>",
             "<i class='flaticon-right-chevron'></i>"
         ]
+    }
+
+    scrollTo(target) {
+      this.scroller.scrollToAnchor(target);
     }
 
 }

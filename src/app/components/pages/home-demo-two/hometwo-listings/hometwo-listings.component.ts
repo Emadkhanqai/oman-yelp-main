@@ -246,7 +246,7 @@ export class HometwoListingsComponent implements OnInit {
     bottomButton = [
         {
             text: 'More Listings',
-            link: 'grid-listings-left-sidebar'
+            link: 'vertical-listings-left-sidebar'
         }
     ]
     customOptions: OwlOptions = {

@@ -3,11 +3,13 @@
 <!-- Start Listings Details Area -->
 <section class="listings-details-area pb-70">
     <div class="listings-details-image">
+      <div class="image_overlay_gradient">
         <img src="assets/img/listings-details.jpg" alt="image">
+      </div>
         <div class="container">
             <div class="container">
                 <div class="listings-details-content">
-                    <span class="meta"><i class="flaticon-furniture-and-household"></i> Restaurant</span>
+                    <span class="meta cyan_original"><i class="flaticon-furniture-and-household"></i> Restaurant</span>
                     <h3>Chipotle Mexican Grill</h3>
                     <div class="rating d-flex align-items-center">
                         <span class="bx bxs-star checked"></span>
@@ -15,21 +17,21 @@
                         <span class="bx bxs-star checked"></span>
                         <span class="bx bxs-star checked"></span>
                         <span class="bx bxs-star checked"></span>
-                        <span class="rating-count">(45)</span>
+                        <span class="rating-count cyan_original">(45)</span>
                     </div>
                     <ul class="d-flex align-items-center">
                         <li class="phone-number">
                             <a href="#"><i class='bx bx-phone-call'></i> (+212) 279-1456</a>
                         </li>
-                        <li class="time">
+                        <li class="time ">
                             <i class='bx bx-time-five'></i>
                             <span>Currently Open</span>
-                            08:00 AM - 10:00 PM
+                          <span class="cyan_original">08:00 AM - 10:00 PM</span>
                         </li>
                         <li class="location">
                             <i class='bx bx-map'></i>
                             <span>Location</span>
-                            New York, USA
+                            <span class="cyan_original">New York, USA</span>
                         </li>
                     </ul>
                 </div>
@@ -56,11 +58,12 @@
     <div class="listings-details-nav">
         <div class="container">
             <ul class="nav nav-tabs">
-                <li class="nav-item"><a class="nav-link active" href="#overview">Overview</a></li>
-                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link" href="#review">Review</a></li>
-                <li class="nav-item"><a class="nav-link" href="#add-review">Add Review</a></li>
+                <li class="nav-item"><a class="nav-link active" style="cursor: pointer;" (click)="scrollTo('overview')" >Overview</a></li>
+                <li class="nav-item"><a class="nav-link" style="cursor: pointer;" (click)="scrollTo('gallery')" >Gallery</a></li>
+                <li class="nav-item"><a class="nav-link"  style="cursor: pointer;" (click)="scrollTo('pricing')" >Pricing</a></li>
+                <li class="nav-item"><a class="nav-link"  style="cursor: pointer;" (click)="scrollTo('review')" >Review</a></li>
+                <li class="nav-item"><a class="nav-link" style="cursor: pointer;" (click)="scrollTo('add-review')" >Add Review</a></li>
+                <li class="nav-item"><a class="nav-link" style="cursor: pointer;" href="#" >Add Photo</a></li>
             </ul>
         </div>
     </div>
@@ -205,7 +208,7 @@
                     <div class="write-a-review">
                         <h4>Tell people what you think.</h4>
                         <p>Help others by sharing your experience with this business.</p>
-                        <a routerLink="/single-listings" class="default-btn">Write A Review</a>
+                        <a  (click)="scrollTo('add-review')" class="default-btn">Write A Review</a>
                     </div>
                     <div id="review">
                         <div class="listings-review-comments">
@@ -437,7 +440,7 @@
                             </form>
                         </div>
                     </div>
-                    <h3>Other Nearby Services</h3>
+                    <h3>Other Services</h3>
                     <div class="row">
                         <div class="col-lg-6 col-md-6" *ngFor="let Content of singleListingsBox;">
                             <div class="single-listings-box">
@@ -512,7 +515,7 @@
                             <div class="author-profile">
                                 <div class="row align-items-center">
                                     <div class="col-lg-5 col-md-5">
-                                        <a href="#" class="view-profile">View Profile</a>
+                                        <a routerLink="/user-profile" class="view-profile">View Profile</a>
                                     </div>
 
                                     <div class="col-lg-7 col-md-7">
