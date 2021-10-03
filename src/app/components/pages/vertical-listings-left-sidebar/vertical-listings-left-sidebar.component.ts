@@ -90,12 +90,13 @@ export class VerticalListingsLeftSidebarComponent implements OnInit {
             bookmarkLink: 'single-listings',
             category: 'Restaurant',
             location: 'New York, USA',
-            title: 'The Mad Made Grill',
+            title: 'The Mad Made Grill 2',
             price: 'Start From: $121',
             detailsLink: 'single-listings',
             authorImg: 'assets/img/user3.jpg',
             authorName: 'James',
             openORclose: 'Open Now',
+            sponsored: true,
             extraClass: 'status-open',
             rating: [
                 {
@@ -128,6 +129,7 @@ export class VerticalListingsLeftSidebarComponent implements OnInit {
             authorImg: 'assets/img/user2.jpg',
             authorName: 'Sarah',
             openORclose: 'Open Now',
+            sponsored: true,
             extraClass: 'status-open',
             rating: [
                 {
@@ -160,6 +162,7 @@ export class VerticalListingsLeftSidebarComponent implements OnInit {
             authorImg: 'assets/img/user5.jpg',
             authorName: 'Lina',
             openORclose: 'Open Now',
+            sponsored: false,
             extraClass: 'status-open',
             rating: [
                 {
@@ -192,6 +195,7 @@ export class VerticalListingsLeftSidebarComponent implements OnInit {
             authorImg: 'assets/img/user1.jpg',
             authorName: 'Taylor',
             openORclose: 'Close Now',
+            sponsored: false,
             extraClass: 'status-close',
             rating: [
                 {

@@ -196,7 +196,10 @@
 
                 <div class="row">
                     <div class="col-lg-12 col-md-12" *ngFor="let Content of singleListingsItem | paginate: { itemsPerPage: 4, currentPage: verticalListings }">
-                        <div class="single-listings-item">
+                        <div
+class='single-listings-item'
+
+                        >
                             <div class="row m-0">
                                 <div class="col-lg-4 col-md-4 p-0">
                                     <div class="listings-image" style="background-image: url({{Content.mainImg}});">
@@ -215,7 +218,14 @@
 
                                 <div class="col-lg-8 col-md-8 p-0">
                                     <div class="listings-content">
-                                        <span class="status {{Content.extraClass}}"><i class="flaticon-save"></i> {{Content.openORclose}}</span>
+                                        <span class="status {{Content.extraClass}}"><i class="flaticon-save"></i>
+                                          {{Content.openORclose}}
+                                        </span>
+                                        <span *ngIf="Content.sponsored"
+                                        style="float: right;"
+                                        class="sponsored"><i class="flaticon-star"></i>
+                                          Sponsored
+                                        </span>
                                         <h3><a routerLink="/{{Content.detailsLink}}">{{Content.title}}</a></h3>
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div class="rating">
