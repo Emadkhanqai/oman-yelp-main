@@ -1,0 +1,43 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<div class="container" id="container" style="margin-top: 20px;">
+
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign Up</h1>
+			<div class="social-container">
+				<a href="#" class="social">
+          <img src="../../../../assets/img/fb.png" />
+        </a>
+				<a href="#" class="social">
+          <img src="../../../../assets/img/go.png" />
+        </a>
+			</div>
+			<span> ---- or ---- </span>
+        <input autocomplete="off" type="email" placeholder="Email" />
+        <input autocomplete="off" type="password" placeholder="Password" />
+        <button style="background-color: black; border: none; border-radius: 5px;display: block; width: 100%;margin-bottom: 10px;
+        margin-top: 10px;">Sign Up</button>
+        <button style="background-color: whitesmoke; color: black; border: none; border-radius: 5px;display: block; width: 100%;margin-bottom: 2px;" id="signUp" routerLink="/account" >Sign In</button>
+        <a routerLink="/forgot-password" style="color: black;font-weight: bold;">Forgot your password?</a>
+		</form>
+	</div>
+
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-right">
+				<h1 style="margin-top: 20px;">Register a Business?</h1>
+				<p style="color:white; font-weight: bold;">Don't worry, we never post without your permission.</p>
+
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button style="background-color: white; color: black; border: none; border-radius: 5px;display: block; width: 100%;margin-bottom: 10px;
+        margin-top: 10px;">Sign Up</button>
+				<button style="background-color: #03d4d4; color: black; border: none; border-radius: 5px;display: block; width: 100%;margin-bottom: 2px;" id="signUp" routerLink="/account" >Sign In</button>
+        <a routerLink="/forgot-password"  style="color: white;font-weight: bold;margin-bottom: 20px;">Forgot your password?</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutUsComponent } from './components/pages/about-us/about-us.component';
+import { AccountComponent } from './components/pages/account/account.component';
 import { AuthorProfileComponent } from './components/pages/author-profile/author-profile.component';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 import { BlogGridComponent } from './components/pages/blog-grid/blog-grid.component';
@@ -23,6 +24,7 @@ import { DashboardComponent } from './components/pages/dashboard/dashboard.compo
 import { EventsDetailsComponent } from './components/pages/events-details/events-details.component';
 import { EventsComponent } from './components/pages/events/events.component';
 import { FaqComponent } from './components/pages/faq/faq.component';
+import { ForgotPasswordComponent } from './components/pages/forgot-password/forgot-password.component';
 import { GalleryComponent } from './components/pages/gallery/gallery.component';
 import { GridListingsFullWidthComponent } from './components/pages/grid-listings-full-width/grid-listings-full-width.component';
 import { GridListingsLeftSidebarComponent } from './components/pages/grid-listings-left-sidebar/grid-listings-left-sidebar.component';
@@ -35,6 +37,7 @@ import { NotFoundComponent } from './components/pages/not-found/not-found.compon
 import { PricingComponent } from './components/pages/pricing/pricing.component';
 import { ProductsDetailsComponent } from './components/pages/products-details/products-details.component';
 import { ProductsListComponent } from './components/pages/products-list/products-list.component';
+import { RegisterComponent } from './components/pages/register/register.component';
 import { TopPlaceComponent } from './components/pages/top-place/top-place.component';
 import { VerticalListingsFullWidthComponent } from './components/pages/vertical-listings-full-width/vertical-listings-full-width.component';
 import { VerticalListingsLeftSidebarComponent } from './components/pages/vertical-listings-left-sidebar/vertical-listings-left-sidebar.component';
@@ -44,6 +47,9 @@ const routes: Routes = [
     {path: '', component: HomeDemoTwoComponent},
     // {path: 'index-2', component: HomeDemoTwoComponent},
     {path: 'about', component: AboutUsComponent},
+    {path: 'register', component: RegisterComponent},
+    {path: 'forgot-password', component: ForgotPasswordComponent},
+    {path: 'account', component: AccountComponent},
     {path: 'how-it-works', component: HowItWorksPageComponent},
     {path: 'pricing', component: PricingComponent},
     {path: 'gallery', component: GalleryComponent},

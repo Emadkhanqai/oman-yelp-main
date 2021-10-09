@@ -75,10 +75,16 @@ import { DashboardMyProfileComponent } from './components/pages/dashboard/dashbo
 import { DashboardAddListingsComponent } from './components/pages/dashboard/dashboard-add-listings/dashboard-add-listings.component';
 import { DashboardBookmarksComponent } from './components/pages/dashboard/dashboard-bookmarks/dashboard-bookmarks.component';
 import { DashboardMyListingsComponent } from './components/pages/dashboard/dashboard-my-listings/dashboard-my-listings.component';
+import { AccountComponent } from './components/pages/account/account.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { RegisterComponent } from './components/pages/register/register.component';
+import { ForgotPasswordComponent } from './components/pages/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
+    AccountComponent,
+    RegisterComponent,
+    ForgotPasswordComponent,
     AppComponent,
     HomeDemoOneComponent,
     HomeDemoTwoComponent,
@@ -145,7 +151,10 @@ import { GoogleMapsModule } from '@angular/google-maps';
     DashboardMyProfileComponent,
     DashboardAddListingsComponent,
     DashboardBookmarksComponent,
-    DashboardMyListingsComponent
+    DashboardMyListingsComponent,
+    AccountComponent,
+    RegisterComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
