@@ -11,11 +11,11 @@ export class DashboardMyProfileComponent implements OnInit {
 
     ngOnInit(): void {
     }
-    
+
     breadcrumb = [
         {
-            title: 'My Profile',
-            subTitle: 'Dashboard'
+            title: 'Business Information',
+            subTitle: ''
         }
     ]
 
