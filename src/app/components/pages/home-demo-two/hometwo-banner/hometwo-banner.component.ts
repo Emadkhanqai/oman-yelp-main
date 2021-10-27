@@ -20,27 +20,27 @@ export class HometwoBannerComponent implements OnInit {
             popularSearchList: [
                 {
                     title: 'Restaurants',
-                    link: 'vertical-listings-left-sidebar'
+                    link: 'listing-view'
                 },
                 {
                     title: 'Events',
-                    link: 'vertical-listings-left-sidebar'
+                    link: 'listing-view'
                 },
                 {
                     title: 'Clothing',
-                    link: 'vertical-listings-left-sidebar'
+                    link: 'listing-view'
                 },
                 {
                     title: 'Bank',
-                    link: 'vertical-listings-left-sidebar'
+                    link: 'listing-view'
                 },
                 {
                     title: 'Fitness',
-                    link: 'vertical-listings-left-sidebar'
+                    link: 'listing-view'
                 },
                 {
                     title: 'Bookstore',
-                    link: 'vertical-listings-left-sidebar'
+                    link: 'listing-view'
                 }
             ]
         }

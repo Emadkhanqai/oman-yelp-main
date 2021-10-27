@@ -44,54 +44,86 @@ import { VerticalListingsLeftSidebarComponent } from './components/pages/vertica
 import { VerticalListingsRightSidebarComponent } from './components/pages/vertical-listings-right-sidebar/vertical-listings-right-sidebar.component';
 
 const routes: Routes = [
-    {path: '', component: HomeDemoTwoComponent},
-    // {path: 'index-2', component: HomeDemoTwoComponent},
-    {path: 'about', component: AboutUsComponent},
-    {path: 'register', component: RegisterComponent},
-    {path: 'forgot-password', component: ForgotPasswordComponent},
-    {path: 'account', component: AccountComponent},
-    {path: 'how-it-works', component: HowItWorksPageComponent},
-    {path: 'pricing', component: PricingComponent},
-    {path: 'gallery', component: GalleryComponent},
-    {path: 'faq', component: FaqComponent},
-    {path: 'coming-soon', component: ComingSoonComponent},
-    {path: 'contact', component: ContactComponent},
-    {path: 'blog-grid', component: BlogGridComponent},
-    {path: 'blog-right-sidebar', component: BlogRightSidebarComponent},
-    {path: 'blog-details', component: BlogDetailsComponent},
-    {path: 'products-list', component: ProductsListComponent},
-    {path: 'cart', component: CartComponent},
-    {path: 'checkout', component: CheckoutComponent},
-    {path: 'single-products', component: ProductsDetailsComponent},
-    {path: 'user-profile', component: AuthorProfileComponent},
-    {path: 'categories', component: CategoriesComponent},
-    {path: 'destinations', component: TopPlaceComponent},
-    {path: 'vertical-listings-left-sidebar', component: VerticalListingsLeftSidebarComponent},
-    {path: 'vertical-listings-right-sidebar', component: VerticalListingsRightSidebarComponent},
-    {path: 'vertical-listings-full-width', component: VerticalListingsFullWidthComponent},
-    {path: 'grid-listings-left-sidebar', component: GridListingsLeftSidebarComponent},
-    {path: 'grid-listings-right-sidebar', component: GridListingsRightSidebarComponent},
-    {path: 'grid-listings-full-width', component: GridListingsFullWidthComponent},
-    {path: 'single-listings', component: ListingsDetailsComponent},
-    {path: 'events', component: EventsComponent},
-    {path: 'single-events', component: EventsDetailsComponent},
-    {path: 'dashboard', component: DashboardComponent},
-    {path: 'dashboard-messages', component: DashboardMessagesComponent},
-    {path: 'dashboard-bookings', component: DashboardBookingsComponent},
-    {path: 'dashboard-wallet', component: DashboardWalletComponent},
-    {path: 'dashboard-reviews', component: DashboardReviewsComponent},
-    {path: 'dashboard-invoice', component: DashboardInvoiceComponent},
-    {path: 'dashboard-my-profile', component: DashboardMyProfileComponent},
-    {path: 'dashboard-add-listings', component: DashboardAddListingsComponent},
-    {path: 'dashboard-bookmarks', component: DashboardBookmarksComponent},
-    {path: 'dashboard-my-listings', component: DashboardMyListingsComponent},
-    // Here add new pages component
+  { path: '', component: HomeDemoTwoComponent },
+  // {path: 'index-2', component: HomeDemoTwoComponent},
+  { path: 'about', component: AboutUsComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'account', component: AccountComponent },
+  { path: 'how-it-works', component: HowItWorksPageComponent },
+  { path: 'pricing', component: PricingComponent },
+  { path: 'gallery', component: GalleryComponent },
+  { path: 'faq', component: FaqComponent },
+  { path: 'coming-soon', component: ComingSoonComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'blog-grid', component: BlogGridComponent },
+  { path: 'blog-right-sidebar', component: BlogRightSidebarComponent },
+  { path: 'blog-details', component: BlogDetailsComponent },
+  { path: 'products-list', component: ProductsListComponent },
+  { path: 'cart', component: CartComponent },
+  { path: 'checkout', component: CheckoutComponent },
+  { path: 'single-products', component: ProductsDetailsComponent },
+  { path: 'user-profile', component: AuthorProfileComponent },
+  { path: 'categories', component: CategoriesComponent },
+  { path: 'destinations', component: TopPlaceComponent },
+  // {path: 'listing-view', component: VerticalListingsLeftSidebarComponent},
 
-    {path: '**', component: NotFoundComponent} // This line will remain down from the whole pages component list
+  {
+    path: 'listing-view',
+    children: [
+      { path: ':id', component: VerticalListingsLeftSidebarComponent },
+    ],
+  },
+
+  {
+    path: 'vertical-listings-right-sidebar',
+    component: VerticalListingsRightSidebarComponent,
+  },
+  {
+    path: 'vertical-listings-full-width',
+    component: VerticalListingsFullWidthComponent,
+  },
+  {
+    path: 'grid-listings-left-sidebar',
+    component: GridListingsLeftSidebarComponent,
+  },
+  {
+    path: 'grid-listings-right-sidebar',
+    component: GridListingsRightSidebarComponent,
+  },
+  {
+    path: 'grid-listings-full-width',
+    component: GridListingsFullWidthComponent,
+  },
+
+
+  {
+    path: 'listing-detail',
+    children: [
+      { path: ':id', component: ListingsDetailsComponent },
+    ],
+  },
+
+
+  { path: 'events', component: EventsComponent },
+  { path: 'single-events', component: EventsDetailsComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'dashboard-messages', component: DashboardMessagesComponent },
+  { path: 'dashboard-bookings', component: DashboardBookingsComponent },
+  { path: 'dashboard-wallet', component: DashboardWalletComponent },
+  { path: 'dashboard-reviews', component: DashboardReviewsComponent },
+  { path: 'dashboard-invoice', component: DashboardInvoiceComponent },
+  { path: 'dashboard-my-profile', component: DashboardMyProfileComponent },
+  { path: 'dashboard-add-listings', component: DashboardAddListingsComponent },
+  { path: 'dashboard-bookmarks', component: DashboardBookmarksComponent },
+  { path: 'dashboard-my-listings', component: DashboardMyListingsComponent },
+  // Here add new pages component
+
+  { path: '**', component: NotFoundComponent }, // This line will remain down from the whole pages component list
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
-    exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

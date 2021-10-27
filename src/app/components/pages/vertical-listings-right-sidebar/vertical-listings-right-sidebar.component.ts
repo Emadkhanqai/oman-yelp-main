@@ -32,23 +32,26 @@ export class VerticalListingsRightSidebarComponent implements OnInit {
     options = [
         // Type here your category name
         {
-            name: "Restaurants",
-        },
-        {
-            name: "Events",
-        },
-        {
-            name: "Clothing",
-        },
-        {
-            name: "Bank",
-        },
-        {
-            name: "Fitness",
-        },
-        {
-            name: "Bookstore",
-        }
+          name: "Healthcare",
+      },
+      {
+          name: "Hotel",
+      },
+      {
+          name: "Educational Institutions",
+      },
+      {
+          name: "Travel and Leisure",
+      },
+      {
+          name: "Events",
+      },
+      {
+          name: "Shopping",
+      },
+      {
+          name: "Fitness, Beauty and Spa",
+      }
     ];
     searchChange($event) {
         console.log($event);
@@ -82,13 +85,13 @@ export class VerticalListingsRightSidebarComponent implements OnInit {
     singleListingsItem = [
         {
             mainImg: 'assets/img/listings/listings9.jpg',
-            categoryLink: 'single-listings',
-            bookmarkLink: 'single-listings',
+            categoryLink: 'listing-detail',
+            bookmarkLink: 'listing-detail',
             category: 'Restaurant',
             location: 'New York, USA',
             title: 'The Mad Made Grill',
             price: 'Start From: $121',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             authorImg: 'assets/img/user3.jpg',
             authorName: 'James',
             openORclose: 'Open Now',
@@ -114,13 +117,13 @@ export class VerticalListingsRightSidebarComponent implements OnInit {
         },
         {
             mainImg: 'assets/img/listings/listings10.jpg',
-            categoryLink: 'single-listings',
-            bookmarkLink: 'single-listings',
+            categoryLink: 'listing-detail',
+            bookmarkLink: 'listing-detail',
             category: 'Hotel',
             location: 'Los Angeles, USA',
             title: 'The Beverly Hills Hotel',
             price: 'Start From: $200',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             authorImg: 'assets/img/user2.jpg',
             authorName: 'Sarah',
             openORclose: 'Open Now',
@@ -146,13 +149,13 @@ export class VerticalListingsRightSidebarComponent implements OnInit {
         },
         {
             mainImg: 'assets/img/listings/listings11.jpg',
-            categoryLink: 'single-listings',
-            bookmarkLink: 'single-listings',
+            categoryLink: 'listing-detail',
+            bookmarkLink: 'listing-detail',
             category: 'Shopping',
             location: 'Seattle, USA',
             title: 'Blue Water Shopping City',
             price: 'Start From: $500',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             authorImg: 'assets/img/user5.jpg',
             authorName: 'Lina',
             openORclose: 'Open Now',
@@ -178,13 +181,13 @@ export class VerticalListingsRightSidebarComponent implements OnInit {
         },
         {
             mainImg: 'assets/img/listings/listings12.jpg',
-            categoryLink: 'single-listings',
-            bookmarkLink: 'single-listings',
+            categoryLink: 'listing-detail',
+            bookmarkLink: 'listing-detail',
             category: 'Restaurant',
             location: 'New York, USA',
             title: 'Chipotle Mexican Grill',
             price: 'Start From: $150',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             authorImg: 'assets/img/user1.jpg',
             authorName: 'Taylor',
             openORclose: 'Close Now',
@@ -210,13 +213,13 @@ export class VerticalListingsRightSidebarComponent implements OnInit {
         },
         {
             mainImg: 'assets/img/listings/listings17.jpg',
-            categoryLink: 'single-listings',
-            bookmarkLink: 'single-listings',
+            categoryLink: 'listing-detail',
+            bookmarkLink: 'listing-detail',
             category: 'Restaurant',
             location: 'New York, USA',
             title: 'Thai Me Up Restaurant',
             price: 'Start From: $150',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             authorImg: 'assets/img/user2.jpg',
             authorName: 'Sarah',
             openORclose: 'Close Now',
@@ -242,13 +245,13 @@ export class VerticalListingsRightSidebarComponent implements OnInit {
         },
         {
             mainImg: 'assets/img/listings/listings16.jpg',
-            categoryLink: 'single-listings',
-            bookmarkLink: 'single-listings',
+            categoryLink: 'listing-detail',
+            bookmarkLink: 'listing-detail',
             category: 'Shopping',
             location: 'Seattle, USA',
             title: 'Skyview Shopping Complex',
             price: 'Start From: $500',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             authorImg: 'assets/img/user5.jpg',
             authorName: 'Lina',
             openORclose: 'Open Now',

@@ -24,7 +24,7 @@ export class HometwoDestinationsComponent implements OnInit {
             subTitle: 'THAILAND',
             title: 'Bangkok',
             number: '26 Places',
-            link: 'vertical-listings-left-sidebar'
+            link: 'listing-view'
         }
     ]
     singleDestinationsBox = [
@@ -33,42 +33,42 @@ export class HometwoDestinationsComponent implements OnInit {
             subTitle: 'UNITED STATES',
             title: 'New York',
             number: '20 Places',
-            link: 'vertical-listings-left-sidebar'
+            link: 'listing-view'
         },
         {
             img: 'assets/img/destinations/destinations3.jpg',
             subTitle: 'JAPAN',
             title: 'Osaka',
             number: '30 Places',
-            link: 'vertical-listings-left-sidebar'
+            link: 'listing-view'
         },
         {
             img: 'assets/img/destinations/destinations4.jpg',
             subTitle: 'FRANCE',
             title: 'Paris',
             number: '35 Places',
-            link: 'vertical-listings-left-sidebar'
+            link: 'listing-view'
         },
         {
             img: 'assets/img/destinations/destinations5.jpg',
             subTitle: 'UNITED KINGDOM',
             title: 'London',
             number: '21 Places',
-            link: 'vertical-listings-left-sidebar'
+            link: 'listing-view'
         },
         {
             img: 'assets/img/destinations/destinations6.jpg',
             subTitle: 'ABUDABI',
             title: 'Dubai',
             number: '14 Places',
-            link: 'vertical-listings-left-sidebar'
+            link: 'listing-view'
         },
         {
             img: 'assets/img/destinations/destinations7.jpg',
             subTitle: 'AUSTRALIA',
             title: 'Sydney',
             number: '10 Places',
-            link: 'vertical-listings-left-sidebar'
+            link: 'listing-view'
         }
     ]
 

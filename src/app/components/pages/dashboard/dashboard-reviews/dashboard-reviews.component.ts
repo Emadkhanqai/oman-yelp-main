@@ -23,7 +23,7 @@ export class DashboardReviewsComponent implements OnInit {
             userImage: 'assets/img/user4.jpg',
             userName: 'James Anderson',
             listingsName: 'Farmis Hotel',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             date: '20 June 2020',
             text: "Very well built theme, couldn't be happier with it. Can't wait for future updates to see what else they add in.",
             reviewImage: [
@@ -59,7 +59,7 @@ export class DashboardReviewsComponent implements OnInit {
             userImage: 'assets/img/user2.jpg',
             userName: 'Sarah Taylor',
             listingsName: 'Shopping Complex',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             date: '19 June 2020',
             text: "Very well built theme, couldn't be happier with it. Can't wait for future updates to see what else they add in.",
             reviewImage: [
@@ -89,7 +89,7 @@ export class DashboardReviewsComponent implements OnInit {
             userImage: 'assets/img/user3.jpg',
             userName: 'David Warner',
             listingsName: 'Gym Training',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             date: '18 June 2020',
             text: "Very well built theme, couldn't be happier with it. Can't wait for future updates to see what else they add in.",
             reviewImage: [
@@ -121,7 +121,7 @@ export class DashboardReviewsComponent implements OnInit {
             userImage: 'assets/img/user1.jpg',
             userName: 'You',
             listingsName: 'Gym Training',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             date: '18 June 2020',
             text: "Very well built theme, couldn't be happier with it. Can't wait for future updates to see what else they add in.",
             rating: [
@@ -146,7 +146,7 @@ export class DashboardReviewsComponent implements OnInit {
             userImage: 'assets/img/user1.jpg',
             userName: 'You',
             listingsName: 'Farmis Hotel',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             date: '17 June 2020',
             text: "Very well built theme, couldn't be happier with it. Can't wait for future updates to see what else they add in.",
             rating: [
@@ -171,7 +171,7 @@ export class DashboardReviewsComponent implements OnInit {
             userImage: 'assets/img/user1.jpg',
             userName: 'You',
             listingsName: 'Shopping Complex',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             date: '16 June 2020',
             text: "Very well built theme, couldn't be happier with it. Can't wait for future updates to see what else they add in.",
             rating: [

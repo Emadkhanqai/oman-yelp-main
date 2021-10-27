@@ -1,7 +1,9 @@
 <app-navbar-style-two></app-navbar-style-two>
 
 <!-- Start Listings Details Area -->
-<section class="listings-details-area pb-70">
+<section class="listings-details-area pb-70"
+*ngFor="let Content of singleListingsBox"
+>
     <div class="listings-details-image">
       <div class="image_overlay_gradient">
         <img src="assets/img/listings-details.jpg" alt="image">
@@ -10,7 +12,7 @@
             <div class="container">
                 <div class="listings-details-content">
                     <span class="meta cyan_original"><i class="flaticon-furniture-and-household"></i> Restaurant</span>
-                    <h3>Chipotle Mexican Grill</h3>
+                    <h3>{{Content.title}}</h3>
                     <div class="rating d-flex align-items-center">
                         <span class="bx bxs-star checked"></span>
                         <span class="bx bxs-star checked"></span>

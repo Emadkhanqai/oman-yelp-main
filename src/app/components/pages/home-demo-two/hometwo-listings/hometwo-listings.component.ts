@@ -26,13 +26,13 @@ export class HometwoListingsComponent implements OnInit {
                     img: 'assets/img/listings/listings7.jpg'
                 }
             ],
-            categoryLink: 'single-listings',
+            categoryLink: 'listing-detail',
             category: 'Restaurant',
-            bookmarkLink: 'single-listings',
+            bookmarkLink: 'listing-detail',
             location: 'Francisco, USA',
             title: 'The Mad Made Grill',
             price: 'Start From: $121',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             authorImg: 'assets/img/user1.jpg',
             openORclose: 'Open Now',
             extraClass: 'status-open',
@@ -65,13 +65,13 @@ export class HometwoListingsComponent implements OnInit {
                     img: 'assets/img/listings/listings2.jpg'
                 }
             ],
-            categoryLink: 'single-listings',
+            categoryLink: 'listing-detail',
             category: 'Hotel',
-            bookmarkLink: 'single-listings',
+            bookmarkLink: 'listing-detail',
             location: 'Los Angeles, USA',
             title: 'The Beverly Hills Hotel',
             price: 'Start From: $200',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             authorImg: 'assets/img/user2.jpg',
             openORclose: 'Open Now',
             extraClass: 'status-open',
@@ -101,13 +101,13 @@ export class HometwoListingsComponent implements OnInit {
                     img: 'assets/img/listings/listings8.jpg'
                 }
             ],
-            categoryLink: 'single-listings',
+            categoryLink: 'listing-detail',
             category: 'Shopping',
-            bookmarkLink: 'single-listings',
+            bookmarkLink: 'listing-detail',
             location: 'Seattle, USA',
             title: 'Blue Water Shopping City',
             price: 'Start From: $500',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             authorImg: 'assets/img/user5.jpg',
             openORclose: 'Open Now',
             extraClass: 'status-open',
@@ -137,13 +137,13 @@ export class HometwoListingsComponent implements OnInit {
                     img: 'assets/img/listings/listings1.jpg'
                 }
             ],
-            categoryLink: 'single-listings',
+            categoryLink: 'listing-detail',
             category: 'Restaurant',
-            bookmarkLink: 'single-listings',
+            bookmarkLink: 'listing-detail',
             location: 'New York, USA',
             title: 'Chipotle Mexican Grill',
             price: 'Start From: $150',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             authorImg: 'assets/img/user1.jpg',
             openORclose: 'Open Now',
             extraClass: 'status-open',
@@ -173,13 +173,13 @@ export class HometwoListingsComponent implements OnInit {
                     img: 'assets/img/listings/listings3.jpg'
                 }
             ],
-            categoryLink: 'single-listings',
+            categoryLink: 'listing-detail',
             category: 'Shopping',
-            bookmarkLink: 'single-listings',
+            bookmarkLink: 'listing-detail',
             location: 'Bangkok, Thailand',
             title: 'Central Shopping Center',
             price: 'Start From: $110',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             authorImg: 'assets/img/user3.jpg',
             openORclose: 'Close Now',
             extraClass: 'status-close',
@@ -212,13 +212,13 @@ export class HometwoListingsComponent implements OnInit {
                     img: 'assets/img/listings/listings6.jpg'
                 }
             ],
-            categoryLink: 'single-listings',
+            categoryLink: 'listing-detail',
             category: 'Beauty',
-            bookmarkLink: 'single-listings',
+            bookmarkLink: 'listing-detail',
             location: 'Suwanee, USA',
             title: 'Vesax Beauty Center',
             price: 'Start From: $100',
-            detailsLink: 'single-listings',
+            detailsLink: 'listing-detail',
             authorImg: 'assets/img/user4.jpg',
             openORclose: 'Open Now',
             extraClass: 'status-open',
@@ -246,7 +246,7 @@ export class HometwoListingsComponent implements OnInit {
     bottomButton = [
         {
             text: 'More Listings',
-            link: 'vertical-listings-left-sidebar'
+            link: 'listing-view'
         }
     ]
     customOptions: OwlOptions = {

@@ -105,9 +105,9 @@ export class GridListingsFullWidthComponent implements OnInit {
                     img: 'assets/img/listings/listings1.jpg'
                 }
             ],
-            categoryLink: 'single-listings',
-            bookmarkLink: 'single-listings',
-            detailsLink: 'single-listings',
+            categoryLink: 'listing-detail',
+            bookmarkLink: 'listing-detail',
+            detailsLink: 'listing-detail',
             category: 'Restaurant',
             location: 'New York, USA',
             title: 'Chipotle Mexican Grill',
@@ -144,9 +144,9 @@ export class GridListingsFullWidthComponent implements OnInit {
                     img: 'assets/img/listings/listings4.jpg'
                 }
             ],
-            categoryLink: 'single-listings',
-            bookmarkLink: 'single-listings',
-            detailsLink: 'single-listings',
+            categoryLink: 'listing-detail',
+            bookmarkLink: 'listing-detail',
+            detailsLink: 'listing-detail',
             category: 'Hotel',
             location: 'Los Angeles, USA',
             title: 'The Beverly Hills Hotel',
@@ -180,9 +180,9 @@ export class GridListingsFullWidthComponent implements OnInit {
                     img: 'assets/img/listings/listings3.jpg'
                 }
             ],
-            categoryLink: 'single-listings',
-            bookmarkLink: 'single-listings',
-            detailsLink: 'single-listings',
+            categoryLink: 'listing-detail',
+            bookmarkLink: 'listing-detail',
+            detailsLink: 'listing-detail',
             category: 'Shopping',
             location: 'Bangkok, Thailand',
             title: 'Central Shopping Center',
@@ -219,9 +219,9 @@ export class GridListingsFullWidthComponent implements OnInit {
                     img: 'assets/img/listings/listings6.jpg'
                 }
             ],
-            categoryLink: 'single-listings',
-            bookmarkLink: 'single-listings',
-            detailsLink: 'single-listings',
+            categoryLink: 'listing-detail',
+            bookmarkLink: 'listing-detail',
+            detailsLink: 'listing-detail',
             category: 'Beauty',
             location: 'Suwanee, USA',
             title: 'Vesax Beauty Center',
@@ -255,9 +255,9 @@ export class GridListingsFullWidthComponent implements OnInit {
                     img: 'assets/img/listings/listings7.jpg'
                 }
             ],
-            categoryLink: 'single-listings',
-            bookmarkLink: 'single-listings',
-            detailsLink: 'single-listings',
+            categoryLink: 'listing-detail',
+            bookmarkLink: 'listing-detail',
+            detailsLink: 'listing-detail',
             category: 'Restaurant',
             location: 'Francisco, USA',
             title: 'The Mad Made Grill',
@@ -294,9 +294,9 @@ export class GridListingsFullWidthComponent implements OnInit {
                     img: 'assets/img/listings/listings2.jpg'
                 }
             ],
-            categoryLink: 'single-listings',
-            bookmarkLink: 'single-listings',
-            detailsLink: 'single-listings',
+            categoryLink: 'listing-detail',
+            bookmarkLink: 'listing-detail',
+            detailsLink: 'listing-detail',
             category: 'Hotel',
             location: 'Los Angeles, USA',
             title: 'The Beverly Hills Hotel',
@@ -330,9 +330,9 @@ export class GridListingsFullWidthComponent implements OnInit {
                     img: 'assets/img/listings/listings13.jpg'
                 }
             ],
-            categoryLink: 'single-listings',
-            bookmarkLink: 'single-listings',
-            detailsLink: 'single-listings',
+            categoryLink: 'listing-detail',
+            bookmarkLink: 'listing-detail',
+            detailsLink: 'listing-detail',
             category: 'Fitness',
             location: 'Bangkok, Thailand',
             title: 'Power House Gym',
@@ -369,9 +369,9 @@ export class GridListingsFullWidthComponent implements OnInit {
                     img: 'assets/img/listings/listings15.jpg'
                 }
             ],
-            categoryLink: 'single-listings',
-            bookmarkLink: 'single-listings',
-            detailsLink: 'single-listings',
+            categoryLink: 'listing-detail',
+            bookmarkLink: 'listing-detail',
+            detailsLink: 'listing-detail',
             category: 'Beauty',
             location: 'Suwanee, USA',
             title: 'Divine Beauty Parlour & Spa',
