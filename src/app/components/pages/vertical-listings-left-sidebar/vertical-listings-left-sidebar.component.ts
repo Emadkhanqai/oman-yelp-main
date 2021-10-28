@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { GoogleMap } from '@angular/google-maps';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { DataListingService } from 'src/app/data-listing.service';
 
 @Component({
   selector: 'app-vertical-listings-left-sidebar',
@@ -11,12 +12,28 @@ import { Subscription } from 'rxjs';
 export class VerticalListingsLeftSidebarComponent implements OnInit {
   private categoryId;
   public countIdOfCategory;
-  constructor(private route: ActivatedRoute) {}
+  dataFetched;
+  options;
+  constructor(
+    private route: ActivatedRoute,
+    private dataService: DataListingService
+  ) {}
 
   ngOnInit(): void {
+    this.options = this.dataService.options;
     this.resetOption = [this.options[0]];
     this.categoryId = this.route.snapshot.paramMap.get('id');
-    this.singleListingsItem =   this.singleListingsItem.filter((x) => x.categoryId == this.categoryId);
+    this.dataFetched = this.dataService.singleListingsItem;
+
+    console.log(this.categoryId);
+    if (this.categoryId === null) {
+      this.singleListingsItem = this.dataFetched;
+    } else {
+      this.singleListingsItem = this.dataFetched.filter(
+        (x) => x.categoryId == this.categoryId
+      );
+    }
+
     this.countIdOfCategory = this.singleListingsItem.length;
   }
 
@@ -36,30 +53,6 @@ export class VerticalListingsLeftSidebarComponent implements OnInit {
     displayKey: 'name',
     search: true,
   };
-  options = [
-    // Type here your category name
-    {
-      name: 'Healthcare',
-    },
-    {
-      name: 'Hotel',
-    },
-    {
-      name: 'Educational Institutions',
-    },
-    {
-      name: 'Travel and Leisure',
-    },
-    {
-      name: 'Events',
-    },
-    {
-      name: 'Shopping',
-    },
-    {
-      name: 'Fitness, Beauty and Spa',
-    },
-  ];
 
   searchChange($event) {
     console.log($event);
@@ -92,371 +85,7 @@ export class VerticalListingsLeftSidebarComponent implements OnInit {
   ];
 
   // All Listings
-  singleListingsItem = [
-    {
-      mainImg: 'assets/img/listings/listings9.jpg',
-      categoryLink: 'listing-detail',
-      bookmarkLink: 'listing-detail',
-      category: 'Healthcare',
-      categoryId: 1,
-      articleId:1,
-      icon: 'flaticon-heart-1',
-      location: 'New York, USA',
-      title: 'Abeer Hospital',
-      price: 'Start From: $121',
-      detailsLink: 'listing-detail',
-      authorImg: 'assets/img/user3.jpg',
-      authorName: 'James',
-      openORclose: 'Open Now',
-      sponsored: true,
-      extraClass: 'status-open',
-      rating: [
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-      ],
-      ratingCount: '18',
-    },
-    {
-      mainImg: 'assets/img/listings/listings9.jpg',
-      categoryLink: 'listing-detail',
-      bookmarkLink: 'listing-detail',
-      category: 'Healthcare',
-      categoryId: 1,
-      articleId:2,
-      icon: 'flaticon-heart-1',
-      location: 'New York, USA',
-      title: 'Al Hayat International Hospital',
-      price: 'Start From: $121',
-      detailsLink: 'listing-detail',
-      authorImg: 'assets/img/user3.jpg',
-      authorName: 'James',
-      openORclose: 'Open Now',
-      sponsored: true,
-      extraClass: 'status-open',
-      rating: [
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-      ],
-      ratingCount: '18',
-    },
-    {
-      mainImg: 'assets/img/listings/listings9.jpg',
-      categoryLink: 'listing-detail',
-      bookmarkLink: 'listing-detail',
-      category: 'Healthcare',
-      categoryId: 1,
-      articleId:3,
-      icon: 'flaticon-heart-1',
-      location: 'New York, USA',
-      title: 'Al Nahdha Hospital',
-      price: 'Start From: $121',
-      detailsLink: 'listing-detail',
-      authorImg: 'assets/img/user3.jpg',
-      authorName: 'James',
-      openORclose: 'Open Now',
-      sponsored: true,
-      extraClass: 'status-open',
-      rating: [
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-      ],
-      ratingCount: '18',
-    },
-    {
-      mainImg: 'assets/img/listings/listings9.jpg',
-      categoryLink: 'listing-detail',
-      bookmarkLink: 'listing-detail',
-      category: 'Healthcare',
-      categoryId: 1,
-      articleId:4,
-      icon: 'flaticon-heart-1',
-      location: 'New York, USA',
-      title: 'Aster Al Raffah Hospital',
-      price: 'Start From: $121',
-      detailsLink: 'listing-detail',
-      authorImg: 'assets/img/user3.jpg',
-      authorName: 'James',
-      openORclose: 'Open Now',
-      sponsored: true,
-      extraClass: 'status-open',
-      rating: [
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-      ],
-      ratingCount: '18',
-    },
-    {
-      mainImg: 'assets/img/listings/listings9.jpg',
-      categoryLink: 'listing-detail',
-      bookmarkLink: 'listing-detail',
-      category: 'Healthcare',
-      categoryId: 1,
-      articleId:5,
-      icon: 'flaticon-heart-1',
-      location: 'New York, USA',
-      title: 'Apollo Hospital',
-      price: 'Start From: $121',
-      detailsLink: 'listing-detail',
-      authorImg: 'assets/img/user3.jpg',
-      authorName: 'James',
-      openORclose: 'Open Now',
-      sponsored: true,
-      extraClass: 'status-open',
-      rating: [
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-      ],
-      ratingCount: '18',
-    },
-    {
-      mainImg: 'assets/img/listings/listings9.jpg',
-      categoryLink: 'listing-detail',
-      bookmarkLink: 'listing-detail',
-      category: 'Healthcare',
-      categoryId: 1,
-      articleId:6,
-      icon: 'flaticon-heart-1',
-      location: 'New York, USA',
-      title: 'Armed Forces Hospital',
-      price: 'Start From: $121',
-      detailsLink: 'listing-detail',
-      authorImg: 'assets/img/user3.jpg',
-      authorName: 'James',
-      openORclose: 'Open Now',
-      sponsored: true,
-      extraClass: 'status-open',
-      rating: [
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-      ],
-      ratingCount: '18',
-    },
-    {
-      mainImg: 'assets/img/listings/listings9.jpg',
-      categoryLink: 'listing-detail',
-      bookmarkLink: 'listing-detail',
-      category: 'Healthcare',
-      categoryId: 1,
-      articleId:7,
-      icon: 'flaticon-heart-1',
-      location: 'New York, USA',
-      title: 'Badr al Samaa Group of hospitals and polyclinics',
-      price: 'Start From: $121',
-      detailsLink: 'listing-detail',
-      authorImg: 'assets/img/user3.jpg',
-      authorName: 'James',
-      openORclose: 'Open Now',
-      sponsored: true,
-      extraClass: 'status-open',
-      rating: [
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-      ],
-      ratingCount: '18',
-    },
-    {
-      mainImg: 'assets/img/listings/listings9.jpg',
-      categoryLink: 'listing-detail',
-      bookmarkLink: 'listing-detail',
-      category: 'Healthcare',
-      categoryId: 1,
-      articleId:8,
-      icon: 'flaticon-heart-1',
-      location: 'New York, USA',
-      title: 'Burjeel Hospital',
-      price: 'Start From: $121',
-      detailsLink: 'listing-detail',
-      authorImg: 'assets/img/user3.jpg',
-      authorName: 'James',
-      openORclose: 'Open Now',
-      sponsored: true,
-      extraClass: 'status-open',
-      rating: [
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-      ],
-      ratingCount: '18',
-    },
-    {
-      mainImg: 'assets/img/listings/listings9.jpg',
-      categoryLink: 'listing-detail',
-      bookmarkLink: 'listing-detail',
-      category: 'Healthcare',
-      categoryId: 1,
-      articleId:9,
-      icon: 'flaticon-heart-1',
-      location: 'New York, USA',
-      title: 'Khoula Hospital',
-      price: 'Start From: $121',
-      detailsLink: 'listing-detail',
-      authorImg: 'assets/img/user3.jpg',
-      authorName: 'James',
-      openORclose: 'Open Now',
-      sponsored: true,
-      extraClass: 'status-open',
-      rating: [
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-      ],
-      ratingCount: '18',
-    },
-    {
-      mainImg: 'assets/img/listings/listings9.jpg',
-      categoryLink: 'listing-detail',
-      bookmarkLink: 'listing-detail',
-      category: 'Healthcare',
-      categoryId: 1,
-      articleId:10,
-      icon: 'flaticon-heart-1',
-      location: 'New York, USA',
-      title: 'KIMS Oman Hospital',
-      price: 'Start From: $121',
-      detailsLink: 'listing-detail',
-      authorImg: 'assets/img/user3.jpg',
-      authorName: 'James',
-      openORclose: 'Open Now',
-      sponsored: true,
-      extraClass: 'status-open',
-      rating: [
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-      ],
-      ratingCount: '18',
-    },
-
-
-
-  ];
+  singleListingsItem;
 
   verticalListings: number = 1;
 

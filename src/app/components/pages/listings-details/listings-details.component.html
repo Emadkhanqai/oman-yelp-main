@@ -6,7 +6,7 @@
 >
     <div class="listings-details-image">
       <div class="image_overlay_gradient">
-        <img src="assets/img/listings-details.jpg" alt="image">
+        <img src="{{Content.mainImg_single[0].img}}" alt="image">
       </div>
         <div class="container">
             <div class="container">
@@ -33,7 +33,7 @@
                         <li class="location">
                             <i class='bx bx-map'></i>
                             <span>Location</span>
-                            <span class="cyan_original">New York, USA</span>
+                            <span class="cyan_original">{{Content.location}}</span>
                         </li>
                     </ul>
                 </div>
@@ -224,8 +224,8 @@
                                             <div class="d-flex">
                                                 <img src="assets/img/user1.jpg" alt="image">
                                                 <div class="title">
-                                                    <h4>James Andy</h4>
-                                                    <span>New York, USA</span>
+                                                    <h4>{{Content.authorName}}</h4>
+                                                    <span>{{Content.location}}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -262,8 +262,8 @@
                                             <div class="d-flex">
                                                 <img src="assets/img/user2.jpg" alt="image">
                                                 <div class="title">
-                                                    <h4>Sarah Taylor</h4>
-                                                    <span>New York, USA</span>
+                                                    <h4>{{Content.authorName}}</h4>
+                                                    <span>{{Content.location}}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -300,8 +300,8 @@
                                             <div class="d-flex">
                                                 <img src="assets/img/user3.jpg" alt="image">
                                                 <div class="title">
-                                                    <h4>Jason Smith</h4>
-                                                    <span>New York, USA</span>
+                                                  <h4>{{Content.authorName}}</h4>
+                                                  <span>{{Content.location}}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -452,16 +452,16 @@
                                 <div class="listings-image">
                                     <div class="listings-image-slides">
                                         <owl-carousel-o [options]="customOptions">
-                                            <ng-template carouselSlide *ngFor="let Image of Content.mainImg;">
+                                            <ng-template carouselSlide *ngFor="let Image of Content.mainImg_single;">
                                                 <div class="single-image">
                                                     <img [src]="Image.img" alt="image">
-                                                    <a routerLink="/{{Content.detailsLink}}" class="link-btn"></a>
+                                                    <a routerLink="/{{Content.detailsLink + '/' + Content.articleId}}" class="link-btn"></a>
                                                 </div>
                                             </ng-template>
                                         </owl-carousel-o>
                                     </div>
-                                    <a routerLink="/{{Content.bookmarkLink}}" class="bookmark-save"><i class="flaticon-heart"></i></a>
-                                    <a routerLink="/{{Content.categoryLink}}" class="category"><i class="flaticon-cooking"></i></a>
+                                    <a routerLink="/{{Content.bookmarkLink + '/' + Content.articleId}}" class="bookmark-save"><i class="flaticon-heart"></i></a>
+                                    <a routerLink="/{{Content.bookmarkLink + '/' + Content.articleId}}" class="category"><i class="flaticon-cooking"></i></a>
                                 </div>
                                 <div class="listings-content">
                                     <div class="author">
@@ -471,10 +471,10 @@
                                         </div>
                                     </div>
                                     <ul class="listings-meta">
-                                        <li><a routerLink="/{{Content.categoryLink}}"><i class="flaticon-furniture-and-household"></i> Restaurant</a></li>
+                                        <li><a routerLink="/{{Content.bookmarkLink+ '/' + Content.articleId}}"><i class="flaticon-furniture-and-household"></i> Restaurant</a></li>
                                         <li><i class="flaticon-pin"></i> {{Content.location}}</li>
                                     </ul>
-                                    <h3><a routerLink="/{{Content.detailsLink}}">{{Content.title}}</a></h3>
+                                    <h3><a routerLink="/{{Content.detailsLink+ '/' + Content.articleId}}">{{Content.title}}</a></h3>
                                     <span class="status {{Content.extraClass}}"><i class="flaticon-save"></i> {{Content.openORclose}}</span>
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="rating">
@@ -504,7 +504,7 @@
                             <li><i class='bx bx-globe'></i> <a href="#" target="_blank">www.vesax.com</a></li>
                             <li><i class='bx bx-phone-call'></i> <a href="tel:+2122791456">(+212) 279-1456</a></li>
                             <li><i class='bx bx-directions'></i> <a href="#" target="_blank">Get Directions</a></li>
-                            <li><i class='bx bx-map'></i> New York, USA</li>
+                            <li><i class='bx bx-map'></i>{{Content.location}}</li>
                         </ul>
                     </div>
                     <div class="listings-widget listings_author">
@@ -513,7 +513,7 @@
                             <div class="d-flex align-items-center">
                                 <img src="assets/img/user1.jpg" alt="image">
                                 <div class="title">
-                                    <h4><a href="#">John Smith</a></h4>
+                                    <h4><a href="#">{{Content.authorName}}</a></h4>
                                     <span>20 Places Hosted</span>
                                 </div>
                             </div>

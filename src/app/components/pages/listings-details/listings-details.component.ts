@@ -1,6 +1,8 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { DataListingService } from 'src/app/data-listing.service';
 
 @Component({
   selector: 'app-listings-details',
@@ -8,63 +10,25 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./listings-details.component.scss'],
 })
 export class ListingsDetailsComponent implements OnInit {
-  categoryId;
+  articleId;
   options: any;
-  route: any;
-  countIdOfCategory: any;
 
-  constructor(private scroller: ViewportScroller) {}
+  countIdOfCategory: any;
+  dataFetched;
+  constructor(
+    private route: ActivatedRoute,
+    private scroller: ViewportScroller,
+    private dataService: DataListingService
+  ) {}
 
   ngOnInit(): void {
-    this.categoryId = this.route.snapshot.paramMap.get('id');
-    this.singleListingsBox = this.singleListingsBox.filter(
-      (x) => x.categoryId == this.categoryId
-    );
+    this.articleId = this.route.snapshot.paramMap.get('id');
+    this.dataFetched = this.dataService.singleListingsItem;
+    this.singleListingsBox = this.dataFetched.filter((x) => x.articleId == this.articleId);
     this.countIdOfCategory = this.singleListingsBox.length;
   }
 
-  singleListingsBox = [
-    {
-      mainImg: [
-        {
-          img: 'assets/img/listings/listings7.jpg',
-        },
-      ],
-      categoryLink: 'listing-detail',
-      bookmarkLink: 'listing-detail',
-      category: 'Healthcare',
-      categoryId: 1,
-      articleId:1,
-      icon: 'flaticon-heart-1',
-      location: 'New York, USA',
-      title: 'Abeer Hospital',
-      price: 'Start From: $121',
-      detailsLink: 'listing-detail',
-      authorImg: 'assets/img/user3.jpg',
-      authorName: 'James',
-      openORclose: 'Open Now',
-      sponsored: true,
-      extraClass: 'status-open',
-      rating: [
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-        {
-          icon: 'bx bxs-star',
-        },
-      ],
-      ratingCount: '18',
-    },
-  ];
+  singleListingsBox;
 
   galleryOptions: OwlOptions = {
     loop: true,
@@ -92,6 +56,7 @@ export class ListingsDetailsComponent implements OnInit {
       },
     },
   };
+
   singleImageBox = [
     {
       img: 'assets/img/gallery/gallery1.jpg',

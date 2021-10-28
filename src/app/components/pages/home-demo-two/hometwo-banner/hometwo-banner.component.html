@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-12">
                 <div class="banner-content" *ngFor="let Content of bannerContent;">
-                    <h1>{{Content.title}} 
+                    <h1>{{Content.title}}
                         <ngx-typed-js [strings]="['Hotels', 'Restaurants', 'Beauty', 'Fitness', 'Shopping']" [typeSpeed]="100" [loop]="true" [backSpeed]="100" [showCursor]="false">
                             <span class="typing"></span>
                         </ngx-typed-js>
@@ -42,7 +42,7 @@
                     </form>
                     <ul class="popular-search-list">
                         <li>Popular:</li>
-                        <li *ngFor="let List of Content.popularSearchList;"><a routerLink="/{{List.link}}">{{List.title}}</a></li>
+                        <li *ngFor="let List of Content.popularSearchList;"><a routerLink="/{{List.link + '/'+List.id}}">{{List.name}}</a></li>
                     </ul>
                 </div>
             </div>

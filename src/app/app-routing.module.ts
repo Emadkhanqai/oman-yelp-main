@@ -72,6 +72,7 @@ const routes: Routes = [
     path: 'listing-view',
     children: [
       { path: ':id', component: VerticalListingsLeftSidebarComponent },
+      { path: '', component: VerticalListingsLeftSidebarComponent },
     ],
   },
 

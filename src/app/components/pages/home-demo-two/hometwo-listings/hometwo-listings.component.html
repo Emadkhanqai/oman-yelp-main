@@ -12,16 +12,16 @@
                     <div class="listings-image">
                         <div class="listings-image-slides">
                             <owl-carousel-o [options]="customOptions">
-                                <ng-template carouselSlide *ngFor="let Image of Content.mainImg;">
+                                <ng-template carouselSlide *ngFor="let Image of Content.mainImg_single;">
                                     <div class="single-image">
                                         <img [src]="Image.img" alt="image">
-                                        <a routerLink="/{{Content.detailsLink}}" class="link-btn"></a>
+                                        <a routerLink="/{{Content.detailsLink+'/'+Content.articleId}}" class="link-btn"></a>
                                     </div>
                                 </ng-template>
                             </owl-carousel-o>
                         </div>
-                        <a routerLink="/{{Content.bookmarkLink}}" class="bookmark-save"><i class="flaticon-heart"></i></a>
-                        <a routerLink="/{{Content.categoryLink}}" class="category"><i class="flaticon-cooking"></i></a>
+                        <a routerLink="/{{Content.bookmarkLink+'/'+Content.articleId}}" class="bookmark-save"><i class="flaticon-heart"></i></a>
+                        <a routerLink="/{{Content.categoryLink+'/'+Content.articleId}}" class="category"><i class="flaticon-cooking"></i></a>
                     </div>
                     <div class="listings-content">
                         <div class="author">
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         <ul class="listings-meta">
-                            <li><a routerLink="/{{Content.categoryLink}}"><i class="flaticon-furniture-and-household"></i> Restaurant</a></li>
+                            <li><a routerLink="/{{Content.categoryLink}}"><i class="flaticon-furniture-and-household"></i>  {{Content.category}}</a></li>
                             <li><i class="flaticon-pin"></i> {{Content.location}}</li>
                         </ul>
                         <h3><a routerLink="/{{Content.detailsLink}}">{{Content.title}}</a></h3>
