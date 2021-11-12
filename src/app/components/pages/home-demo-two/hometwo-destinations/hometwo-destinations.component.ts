@@ -14,7 +14,7 @@ export class HometwoDestinationsComponent implements OnInit {
     {
       title: 'Popular Places for Future Trips',
       paragraph:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra.',
+        '',
     },
   ];
   singleDestinationsBigBox = [
@@ -27,6 +27,27 @@ export class HometwoDestinationsComponent implements OnInit {
     },
   ];
   singleDestinationsBox = [
+    {
+      img: 'assets/img/destinations/destinations5.jpg',
+      subTitle: 'Oman',
+      title: 'Al-Buraimi',
+      number: '21 Places',
+      link: 'listing-view',
+    },
+    {
+      img: 'assets/img/destinations/destinations6.jpg',
+      subTitle: 'Oman',
+      title: 'Musandam',
+      number: '14 Places',
+      link: 'listing-view',
+    },
+    {
+      img: 'assets/img/destinations/destinations4.jpg',
+      subTitle: 'Oman',
+      title: 'Muscat',
+      number: '35 Places',
+      link: 'listing-view',
+    },
     {
       img: 'assets/img/destinations/destinations2.jpg',
       subTitle: 'UNITED STATES',
@@ -41,27 +62,8 @@ export class HometwoDestinationsComponent implements OnInit {
       number: '30 Places',
       link: 'listing-view',
     },
-    {
-      img: 'assets/img/destinations/destinations4.jpg',
-      subTitle: 'FRANCE',
-      title: 'Paris',
-      number: '35 Places',
-      link: 'listing-view',
-    },
-    {
-      img: 'assets/img/destinations/destinations5.jpg',
-      subTitle: 'UNITED KINGDOM',
-      title: 'London',
-      number: '21 Places',
-      link: 'listing-view',
-    },
-    {
-      img: 'assets/img/destinations/destinations6.jpg',
-      subTitle: 'ABUDABI',
-      title: 'Dubai',
-      number: '14 Places',
-      link: 'listing-view',
-    },
+
+
     {
       img: 'assets/img/destinations/destinations7.jpg',
       subTitle: 'AUSTRALIA',

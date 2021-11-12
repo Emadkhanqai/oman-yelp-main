@@ -1,7 +1,10 @@
 <app-navbar-style-two></app-navbar-style-two>
 
 <!-- Start Page Title Area -->
-<div class="page-title-bg" *ngFor="let Content of pageTitleContent">
+<div class="page-title-bg" *ngFor="let Content of pageTitleContent"
+style="background-image: url('/assets/img/popularplaces.jpg');    background-size: cover;"
+
+>
   <div class="container">
     <h2>{{ Content.title }}</h2>
     <form>
@@ -190,9 +193,15 @@
                         >{{ Content.title }}</a
                       >
                     </h3>
+                    <div style="margin-bottom: 20px;color: #00a861;">
+                      <img src="/assets/img/shield.png" style="width: 25px;"/> Verified License
+                    </div>
                     <div
                       class="d-flex align-items-center justify-content-between"
                     >
+
+
+
                       <div class="rating">
                         <i
                           class="{{ Star.icon }}"

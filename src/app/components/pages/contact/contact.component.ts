@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit {
             title: 'Our Address',
             info: [
                 {
-                    text: '175 5th Ave, New York, NY 10010, United States'
+                    text: 'Second Floor, Office No 203 Building No 515 (Baskin Robins Building ) AlMaha Street Alkhuwair/ Bawshar, Muscat, Oman'
                 }
             ]
         },
@@ -27,25 +27,25 @@ export class ContactComponent implements OnInit {
             title: 'Email Us',
             info: [
                 {
-                    text: '(+44) - 45789 - 5789'
+                    text: '+968 24487081'
                 },
                 {
-                    text: 'hello@winwin.com'
+                    text: 'info@gsoman.com'
                 }
             ]
         },
-        {
-            icon: 'bx bx-time-five',
-            title: 'Hours of Operation',
-            info: [
-                {
-                    text: 'Monday - Friday: 09:00 - 20:00'
-                },
-                {
-                    text: 'Sunday & Saturday: 10:30 - 22:00'
-                }
-            ]
-        }
+        // {
+        //     icon: 'bx bx-time-five',
+        //     title: 'Hours of Operation',
+        //     info: [
+        //         {
+        //             text: 'Monday - Friday: 09:00 - 20:00'
+        //         },
+        //         {
+        //             text: 'Sunday & Saturday: 10:30 - 22:00'
+        //         }
+        //     ]
+        // }
     ]
 
     sectionTitle = [

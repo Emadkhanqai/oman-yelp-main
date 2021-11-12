@@ -15,7 +15,7 @@ export class AppDownloadComponent implements OnInit {
     appDownloadContent = [
         {
             title: 'Download WinWin App',
-            paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            paragraph: '',
             btnBox: [
                 {
                     img: 'assets/img/play-store.png',

@@ -16,7 +16,7 @@ export class FeedbackStyleOneComponent implements OnInit {
     sectionTitle = [
         {
             title: 'User’s Feedback About Us',
-            paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra.'
+            paragraph: ''
         }
     ]
     singleFeedbackBox = [
