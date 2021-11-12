@@ -206,7 +206,7 @@ export class GridListingsRightSidebarComponent implements OnInit {
             detailsLink: 'listing-detail',
             category: 'Beauty',
             location: 'Suwanee, USA',
-            title: 'Vesax Beauty Center',
+            title: 'WinWin Beauty Center',
             price: 'Start From: $100',
             openORclose: 'Open Now',
             extraClass: 'status-open',

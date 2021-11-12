@@ -14,7 +14,7 @@ export class AppDownloadComponent implements OnInit {
 
     appDownloadContent = [
         {
-            title: 'Download Vesax App',
+            title: 'Download WinWin App',
             paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             btnBox: [
                 {

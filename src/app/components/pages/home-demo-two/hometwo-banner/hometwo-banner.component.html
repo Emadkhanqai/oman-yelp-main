@@ -2,14 +2,14 @@
 <section class="banner-area">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-8 col-md-12">
+            <div class="col-lg-8 col-md-8">
                 <div class="banner-content" *ngFor="let Content of bannerContent;">
                     <h1>{{Content.title}}
                         <ngx-typed-js [strings]="['Hotels', 'Restaurants', 'Beauty', 'Fitness', 'Shopping']" [typeSpeed]="100" [loop]="true" [backSpeed]="100" [showCursor]="false">
-                            <span class="typing"></span>
+                            <span class="typing" style="color: white;background-color: #2a7a78;padding-left: 10px;padding-right: 10px;"></span>
                         </ngx-typed-js>
                     </h1>
-                    <p>{{Content.paragraph}}</p>
+                    <p style="color: white;">{{Content.paragraph}}</p>
                     <form>
                         <div class="row m-0 align-items-center">
                             <div class="col-lg-4 col-md-12 p-0">
@@ -42,16 +42,12 @@
                     </form>
                     <ul class="popular-search-list">
                         <li>Popular:</li>
-                        <li *ngFor="let List of Content.popularSearchList;"><a routerLink="/{{List.link + '/'+List.id}}">{{List.name}}</a></li>
+                        <li *ngFor="let List of Content.popularSearchList;"><a routerLink="/{{List.link + '/'+List.id}}" style="color: white;">{{List.name}}</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-12">
-                <div class="banner-image" *ngFor="let Image of bannerImage;">
-                    <img [src]="Image.img" alt="image">
-                </div>
-            </div>
+
         </div>
     </div>
 </section>

@@ -30,7 +30,7 @@ export class ContactComponent implements OnInit {
                     text: '(+44) - 45789 - 5789'
                 },
                 {
-                    text: 'hello@vesax.com'
+                    text: 'hello@winwin.com'
                 }
             ]
         },
@@ -64,13 +64,13 @@ export class ContactComponent implements OnInit {
     submit(form){
         var name = form.name;
         console.log(name);
-        
+
         var email = form.email;
         console.log(email);
 
         var number = form.number;
         console.log(number);
-        
+
         var message = form.message;
         console.log(message);
     }

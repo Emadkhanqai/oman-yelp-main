@@ -218,7 +218,7 @@ export class AuthorProfileComponent implements OnInit {
             category: 'Beauty',
             bookmarkLink: 'listing-detail',
             location: 'Suwanee, USA',
-            title: 'Vesax Beauty Center',
+            title: 'WinWin Beauty Center',
             price: 'Start From: $100',
             detailsLink: 'listing-detail',
             authorImg: 'assets/img/user4.jpg',

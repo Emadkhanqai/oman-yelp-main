@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'vesax-ng'`, () => {
+  it(`should have as title 'winwin-ng'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('vesax-ng');
+    expect(app.title).toEqual('winwin-ng');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('vesax-ng app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('winwin-ng app is running!');
   });
 });

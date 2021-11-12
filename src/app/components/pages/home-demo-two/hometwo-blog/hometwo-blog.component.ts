@@ -14,7 +14,7 @@ export class HometwoBlogComponent implements OnInit {
 
     sectionTitle = [
         {
-            title: 'Vesax Recent News',
+            title: 'WinWin Recent News',
             paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra.'
         }
     ]

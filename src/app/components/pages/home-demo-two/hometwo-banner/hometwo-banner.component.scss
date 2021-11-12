@@ -2,15 +2,24 @@
     padding-top: 150px;
     background: {
         color: #f6f6f6;
-        image: url(../../../../../assets/img/main-banner-bg2.jpg);
+        image: url(../../../../../assets/img/bgmain.png);
         position: center center;
         size: cover;
         repeat: no-repeat;
     };
 }
 .banner-content {
-    max-width: 840px;
-    padding-right: 50px;
+
+    margin-left: auto;
+    margin-top: 0px;
+    background: rgb(0 0 0 / 68%);
+    padding: 28px;
+    border-radius: 14px;
+    color: white !important;
+
+
+
+    margin-bottom: 100px;
     margin: {
         left: auto;
         top: 0px;

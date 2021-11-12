@@ -56,7 +56,7 @@ export class BlogRightSidebarComponent implements OnInit {
             authorImg: 'assets/img/user2.jpg',
             authorName: 'Sarah',
             date: 'Aug 3, 2020',
-            title: 'Vesax Tips To-Go: Getting Started With Analytics',
+            title: 'WinWin Tips To-Go: Getting Started With Analytics',
             link: 'blog-details'
         },
         {
