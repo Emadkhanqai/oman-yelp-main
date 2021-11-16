@@ -13,7 +13,7 @@ export class CategoryComponent implements OnInit {
   sectionTitle = [
     {
       title: 'Browse Businesses by Category',
-      paragraph: '',
+      paragraph: 'WinWin Business Directory integrates all the big, medium and small business in Oman into an easy-to-use, searchable database with a user-friendly and stylish interface. It helps you look into the Oman business world with confidence and style.',
     },
   ];
   singleCategoryBox = [
@@ -41,18 +41,7 @@ export class CategoryComponent implements OnInit {
       numberOfPlaces: '5 Places',
       link: 'listing-view/4',
     },
-    {
-      icon: 'flaticon-calendar',
-      title: 'Events',
-      numberOfPlaces: '5 Places',
-      link: 'listing-view/5',
-    },
-    {
-      icon: 'flaticon-commerce',
-      title: 'Shopping',
-      numberOfPlaces: '5 Places',
-      link: 'listing-view/6',
-    },
+
     {
       icon: 'flaticon-cooking',
       title: 'Fitness, Beauty & Spa',

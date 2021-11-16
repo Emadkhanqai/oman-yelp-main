@@ -45,6 +45,33 @@ export class DataListingService {
     },
   ];
 
+  locations = [
+    {
+      name: 'Al-Buraimi',
+      id: 1,
+    },
+    {
+      name: 'Musandam',
+      id: 2,
+    },
+    {
+      name: 'Muscat',
+      id: 3,
+    },
+    {
+      name: 'Al-Batinah North',
+      id: 4,
+    },
+    {
+      name: 'Al-Wusta',
+      id: 5,
+    },
+    {
+      name: 'Dhofar',
+      id: 6,
+    },
+  ];
+
   singleListingsItem = [
     {
       featured: true,
@@ -467,7 +494,6 @@ export class DataListingService {
       ratingCount: '18',
     },
 
-
     {
       featured: true,
       mainImg: 'assets/img/listings/hotel.jpg',
@@ -888,7 +914,6 @@ export class DataListingService {
       ],
       ratingCount: '18',
     },
-
 
     {
       featured: false,
@@ -1943,9 +1968,6 @@ export class DataListingService {
       ],
       ratingCount: '18',
     },
-
-
-
 
     {
       featured: false,
