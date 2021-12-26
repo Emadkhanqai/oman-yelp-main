@@ -74,22 +74,22 @@
                 <a routerLink="/listing-view/1" [routerLinkActive]="['routeActive']"> Healthcare</a>
                 <ul class="sublisting">
                   <li>
-                    <a>Hospitals</a>
+                    <a routerLink="/listing-view/13" [routerLinkActive]="['routeActive']">Hospitals</a>
                   </li>
                   <li>
-                    <a>Clinics</a>
+                    <a routerLink="/listing-view/14" [routerLinkActive]="['routeActive']">Clinics</a>
                   </li>
                   <li>
-                    <a> Vet Clinics</a>
+                    <a routerLink="/listing-view/15" [routerLinkActive]="['routeActive']"> Vet Clinics</a>
                   </li>
                   <li>
-                    <a>Pet Clinics</a>
+                    <a routerLink="/listing-view/16" [routerLinkActive]="['routeActive']">Pet Clinics</a>
                   </li>
                   <li>
-                    <a>Mental Health</a>
+                    <a routerLink="/listing-view/17" [routerLinkActive]="['routeActive']">Mental Health</a>
                   </li>
                   <li>
-                    <a>Lab & CT Scan</a>
+                    <a routerLink="/listing-view/18" [routerLinkActive]="['routeActive']">Lab & CT Scan</a>
                   </li>
                 </ul>
               </li>
@@ -260,7 +260,7 @@
 
       <div class="col-lg-3 d-none d-lg-block">
         <div class="my-google-map">
-          <google-map>
+          <google-map height="100vh" >
             <map-marker
               *ngFor="let marker of markers"
               [position]="marker.position"

@@ -1078,9 +1078,10 @@
 }
 
 .my-google-map {
+  height: 100vh;
   .map-container {
     width: 800px;
-    height: 600px;
+    height: 100vh;
   }
 }
 
@@ -1121,6 +1122,9 @@
     a {
       font-weight: 400;
       color: #484847;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
