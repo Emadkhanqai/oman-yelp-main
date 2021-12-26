@@ -76,7 +76,7 @@ export class CategoryComponent implements OnInit {
     },
     {
       icon: 'flaticon-more-1',
-      title: 'More Categories',
+      title: 'View All',
       link: 'listing-view',
     },
   ];

@@ -1,10 +1,7 @@
 <app-navbar-style-two></app-navbar-style-two>
 
 <!-- Start Page Title Area -->
-<div class="page-title-bg" *ngFor="let Content of pageTitleContent"
-style="background-image: url('/assets/img/popularplaces.jpg');    background-size: cover;"
-
->
+<div class="page-title-bg" *ngFor="let Content of pageTitleContent">
   <div class="container">
     <h2>{{ Content.title }}</h2>
     <form>
@@ -70,29 +67,55 @@ style="background-image: url('/assets/img/popularplaces.jpg');    background-siz
                     </section> -->
 
           <section class="widget widget_categories">
-            <h3 class="widget-title">Categories</h3>
+            <h3 class="widget-title">Filter</h3>
 
-            <ul>
+            <ul class="filterMainListing">
               <li>
-                <input id="categories1" type="checkbox" />
-                <label for="categories1">Healthcare</label>
+                <a routerLink="/listing-view/1" [routerLinkActive]="['routeActive']"> Healthcare</a>
+                <ul class="sublisting">
+                  <li>
+                    <a>Hospitals</a>
+                  </li>
+                  <li>
+                    <a>Clinics</a>
+                  </li>
+                  <li>
+                    <a> Vet Clinics</a>
+                  </li>
+                  <li>
+                    <a>Pet Clinics</a>
+                  </li>
+                  <li>
+                    <a>Mental Health</a>
+                  </li>
+                  <li>
+                    <a>Lab & CT Scan</a>
+                  </li>
+                </ul>
               </li>
               <li>
-                <input id="categories2" type="checkbox" />
-                <label for="categories2">Hotel</label>
+                <a routerLink="/listing-view/2" [routerLinkActive]="['routeActive']">Hotel</a>
               </li>
               <li>
-                <input id="categories3" type="checkbox" />
-                <label for="categories3">Educational Institutions</label>
+                <a routerLink="/listing-view/3" [routerLinkActive]="['routeActive']">Educational Institutions</a>
               </li>
               <li>
-                <input id="categories4" type="checkbox" />
-                <label for="categories4">Travel and Leisure</label>
+                <a routerLink="/listing-view/4" [routerLinkActive]="['routeActive']">Travel and Leisure</a>
               </li>
-
               <li>
-                <input id="categories7" type="checkbox" />
-                <label for="categories7">Fitness, Beauty and Spa</label>
+                <a routerLink="/listing-view/7" [routerLinkActive]="['routeActive']">Fitness, Beauty and Spa</a>
+              </li>
+              <li>
+                <a routerLink="/listing-view/9" [routerLinkActive]="['routeActive']">Restaurant</a>
+              </li>
+              <li>
+                <a routerLink="/listing-view/10" [routerLinkActive]="['routeActive']">Auto Insurance</a>
+              </li>
+              <li>
+                <a routerLink="/listing-view/11" [routerLinkActive]="['routeActive']">Attorneys</a>
+              </li>
+              <li>
+                <a routerLink="/listing-view/12" [routerLinkActive]="['routeActive']">Plumbers</a>
               </li>
             </ul>
           </section>
@@ -186,15 +209,13 @@ style="background-image: url('/assets/img/popularplaces.jpg');    background-siz
                         >{{ Content.title }}</a
                       >
                     </h3>
-                    <div style="margin-bottom: 20px;color: #00a861;">
-                      <img src="/assets/img/shield.png" style="width: 25px;"/> Verified License
+                    <div style="margin-bottom: 20px; color: #00a861">
+                      <img src="/assets/img/shield.png" style="width: 25px" />
+                      Verified License
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-between"
                     >
-
-
-
                       <div class="rating">
                         <i
                           class="{{ Star.icon }}"

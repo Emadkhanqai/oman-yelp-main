@@ -29,9 +29,12 @@ export class VerticalListingsLeftSidebarComponent implements OnInit {
     if (this.categoryId === null) {
       this.singleListingsItem = this.dataFetched;
     } else {
-      this.singleListingsItem = this.dataFetched.filter(
-        (x) => x.categoryId == this.categoryId
-      );
+      this.route.paramMap.subscribe(params => {
+        this.categoryId = params.get("id")
+        this.singleListingsItem = this.dataFetched.filter(
+          (x) => x.categoryId == this.categoryId
+        );
+      })
     }
 
     this.countIdOfCategory = this.singleListingsItem.length;
