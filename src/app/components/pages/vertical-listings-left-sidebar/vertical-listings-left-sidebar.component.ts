@@ -29,12 +29,12 @@ export class VerticalListingsLeftSidebarComponent implements OnInit {
     if (this.categoryId === null) {
       this.singleListingsItem = this.dataFetched;
     } else {
-      this.route.paramMap.subscribe(params => {
-        this.categoryId = params.get("id")
+      this.route.paramMap.subscribe((params) => {
+        this.categoryId = params.get('id');
         this.singleListingsItem = this.dataFetched.filter(
           (x) => x.categoryId == this.categoryId
         );
-      })
+      });
     }
 
     this.countIdOfCategory = this.singleListingsItem.length;
@@ -97,13 +97,13 @@ export class VerticalListingsLeftSidebarComponent implements OnInit {
   @ViewChild(GoogleMap) map!: GoogleMap;
 
   mapOptions: google.maps.MapOptions = {
-    center: { lat: 38.9987208, lng: -77.2538699 },
-    zoom: 14,
+    center: { lat: 23.59146156241695, lng: 58.42693353861386 },
+    zoom: 16,
     disableDefaultUI: true,
   };
-  marker1 = { position: { lat: 38.9987208, lng: -77.2538699 } };
-  marker2 = { position: { lat: 39.7, lng: -76.0 } };
-  marker3 = { position: { lat: 37.9, lng: -76.8 } };
+  marker1 = { position: { lat: 23.594529104687965, lng: 58.42942327744231 } };
+  marker2 = { position: { lat: 23.597165049525877, lng: 58.41860787138566 } };
+  marker3 = { position: { lat: 23.597597461005012, lng: 58.39929422739941 } };
 
   markers = [this.marker1, this.marker2, this.marker3];
 

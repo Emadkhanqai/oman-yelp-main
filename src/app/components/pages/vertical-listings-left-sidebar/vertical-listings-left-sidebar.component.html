@@ -71,51 +71,120 @@
 
             <ul class="filterMainListing">
               <li>
-                <a routerLink="/listing-view/1" [routerLinkActive]="['routeActive']"> Healthcare</a>
+                <a
+                  routerLink="/listing-view/1"
+                  [routerLinkActive]="['routeActive']"
+                >
+                  Healthcare</a
+                >
                 <ul class="sublisting">
                   <li>
-                    <a routerLink="/listing-view/13" [routerLinkActive]="['routeActive']">Hospitals</a>
+                    <a
+                      routerLink="/listing-view/13"
+                      [routerLinkActive]="['routeActive']"
+                      >Hospitals</a
+                    >
                   </li>
                   <li>
-                    <a routerLink="/listing-view/14" [routerLinkActive]="['routeActive']">Clinics</a>
+                    <a
+                      routerLink="/listing-view/14"
+                      [routerLinkActive]="['routeActive']"
+                      >Clinics</a
+                    >
                   </li>
                   <li>
-                    <a routerLink="/listing-view/15" [routerLinkActive]="['routeActive']"> Vet Clinics</a>
+                    <a
+                      routerLink="/listing-view/15"
+                      [routerLinkActive]="['routeActive']"
+                    >
+                      Vet Clinics</a
+                    >
                   </li>
                   <li>
-                    <a routerLink="/listing-view/16" [routerLinkActive]="['routeActive']">Pet Clinics</a>
+                    <a
+                      routerLink="/listing-view/16"
+                      [routerLinkActive]="['routeActive']"
+                      >Pet Clinics</a
+                    >
                   </li>
                   <li>
-                    <a routerLink="/listing-view/17" [routerLinkActive]="['routeActive']">Mental Health</a>
+                    <a
+                      routerLink="/listing-view/17"
+                      [routerLinkActive]="['routeActive']"
+                      >Mental Health</a
+                    >
                   </li>
                   <li>
-                    <a routerLink="/listing-view/18" [routerLinkActive]="['routeActive']">Lab & CT Scan</a>
+                    <a
+                      routerLink="/listing-view/18"
+                      [routerLinkActive]="['routeActive']"
+                      >Lab & CT Scan</a
+                    >
                   </li>
                 </ul>
               </li>
               <li>
-                <a routerLink="/listing-view/2" [routerLinkActive]="['routeActive']">Hotel</a>
+                <a
+                  routerLink="/listing-view/2"
+                  [routerLinkActive]="['routeActive']"
+                  >Hotel</a
+                >
               </li>
               <li>
-                <a routerLink="/listing-view/3" [routerLinkActive]="['routeActive']">Educational Institutions</a>
+                <a
+                  routerLink="/listing-view/3"
+                  [routerLinkActive]="['routeActive']"
+                  >Educational Institutions</a
+                >
               </li>
               <li>
-                <a routerLink="/listing-view/4" [routerLinkActive]="['routeActive']">Travel and Leisure</a>
+                <a
+                  routerLink="/listing-view/4"
+                  [routerLinkActive]="['routeActive']"
+                  >Travel and Leisure</a
+                >
               </li>
               <li>
-                <a routerLink="/listing-view/7" [routerLinkActive]="['routeActive']">Fitness, Beauty and Spa</a>
+                <a
+                  routerLink="/listing-view/7"
+                  [routerLinkActive]="['routeActive']"
+                  >Fitness, Beauty and Spa</a
+                >
               </li>
               <li>
-                <a routerLink="/listing-view/9" [routerLinkActive]="['routeActive']">Restaurant</a>
+                <a
+                  routerLink="/listing-view/10"
+                  [routerLinkActive]="['routeActive']"
+                  >Restaurant</a
+                >
               </li>
               <li>
-                <a routerLink="/listing-view/10" [routerLinkActive]="['routeActive']">Auto Insurance</a>
+                <a
+                  routerLink="/listing-view/12"
+                  [routerLinkActive]="['routeActive']"
+                  >Auto Insurance</a
+                >
               </li>
               <li>
-                <a routerLink="/listing-view/11" [routerLinkActive]="['routeActive']">Attorneys</a>
+                <a
+                  routerLink="/listing-view/11"
+                  [routerLinkActive]="['routeActive']"
+                  >Attorneys</a
+                >
               </li>
               <li>
-                <a routerLink="/listing-view/12" [routerLinkActive]="['routeActive']">Plumbers</a>
+                <a
+                  routerLink="/listing-view/8"
+                  [routerLinkActive]="['routeActive']"
+                  >Home Services</a
+                >
+              </li>
+              <li>
+                <a
+                  routerLink="/listing-view/9"
+                  [routerLinkActive]="['routeActive']"
+                  >Social Media</a
+                >
               </li>
             </ul>
           </section>
@@ -179,12 +248,7 @@
                       }}"
                       class="link-btn"
                     ></a>
-                    <div class="author">
-                      <div class="d-flex align-items-center">
-                        <img [src]="Content.authorImg" alt="image" />
-                        <span>{{ Content.authorName }}</span>
-                      </div>
-                    </div>
+                   
                   </div>
                 </div>
 
@@ -241,6 +305,7 @@
                       <li>
                         <i class="flaticon-pin"></i> {{ Content.location }}
                       </li>
+                      
                     </ul>
                   </div>
                 </div>
@@ -260,7 +325,7 @@
 
       <div class="col-lg-3 d-none d-lg-block">
         <div class="my-google-map">
-          <google-map height="100vh" >
+          <google-map height="100vh">
             <map-marker
               *ngFor="let marker of markers"
               [position]="marker.position"

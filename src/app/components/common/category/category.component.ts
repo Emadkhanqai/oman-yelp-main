@@ -27,6 +27,18 @@ export class CategoryComponent implements OnInit {
     },
     {
       icon: 'flaticon-hotel',
+      title: 'Home Services',
+      numberOfPlaces: '3 Places',
+      link: 'listing-view/8',
+    },
+    {
+      icon: 'flaticon-support',
+      title: 'Social Media',
+      numberOfPlaces: '3 Places',
+      link: 'listing-view/9',
+    },
+    {
+      icon: 'flaticon-hotel',
       title: 'Hotel',
       numberOfPlaces: '10 Places',
       link: 'listing-view/2',
@@ -45,35 +57,34 @@ export class CategoryComponent implements OnInit {
     },
     {
       icon: 'flaticon-cooking',
+      title: 'Restaurant',
+      numberOfPlaces: '0 Places',
+      link: 'listing-view/11',
+    },
+    {
+      icon: 'flaticon-cooking',
       title: 'Fitness, Beauty & Spa',
       numberOfPlaces: '5 Places',
       link: 'listing-view/7',
     },
     {
-      icon: 'flaticon-cooking',
-      title: 'Restaurant',
-      numberOfPlaces: '0 Places',
-      link: 'listing-view/9',
-    },
-
-    {
       icon: 'flaticon-car-insurance',
       title: 'Auto Insurance',
       numberOfPlaces: '0 Places',
-      link: 'listing-view/9',
+      link: 'listing-view/10',
     },
-    {
-      icon: 'flaticon-attorney',
-      title: 'Attorneys',
-      numberOfPlaces: '0 Places',
-      link: 'listing-view/9',
-    },
-    {
-      icon: 'flaticon-plumber',
-      title: 'Plumbers',
-      numberOfPlaces: '0 Places',
-      link: 'listing-view/9',
-    },
+    // {
+    //   icon: 'flaticon-attorney',
+    //   title: 'Attorneys',
+    //   numberOfPlaces: '0 Places',
+    //   link: 'listing-view/9',
+    // },
+    // {
+    //   icon: 'flaticon-plumber',
+    //   title: 'Plumbers',
+    //   numberOfPlaces: '0 Places',
+    //   link: 'listing-view/9',
+    // },
     {
       icon: 'flaticon-more-1',
       title: 'View All',
