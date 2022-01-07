@@ -24,56 +24,53 @@ export class ListingsDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.articleId = this.route.snapshot.paramMap.get('id');
     this.dataFetched = this.dataService.singleListingsItem;
-    this.singleListingsBox = this.dataFetched.filter((x) => x.articleId == this.articleId);
+    this.singleListingsBox = this.dataFetched.filter(
+      (x) => x.articleId == this.articleId
+    );
     this.countIdOfCategory = this.singleListingsBox.length;
+    console.log(this.singleListingsBox[0].gallery);
+    this.singleListingsBox[0].gallery.forEach((element,index) => {
+      // this.singleImageBox[index].img = element;
+      console.log(element);
+      console.log(index);
+      this.singleImageBox.push(element);
+    });
+    console.log(this.singleImageBox);
+    this.singleImageBox[0].img = this.singleListingsBox[0].gallery;
   }
 
   singleListingsBox;
+  singleImageBox = [];
 
   galleryOptions: OwlOptions = {
     loop: true,
     nav: true,
     dots: false,
     autoplayHoverPause: true,
-    autoplay: true,
+    autoplay: false,
     margin: 30,
+    items: 3,
     navText: [
       "<i class='flaticon-left-chevron'></i>",
       "<i class='flaticon-right-chevron'></i>",
     ],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      576: {
-        items: 2,
-      },
-      768: {
-        items: 2,
-      },
-      992: {
-        items: 2,
-      },
-    },
+    // responsive: {
+    //   0: {
+    //     items: 1,
+    //   },
+    //   576: {
+    //     items: 2,
+    //   },
+    //   768: {
+    //     items: 2,
+    //   },
+    //   992: {
+    //     items: 2,
+    //   },
+    // },
   };
 
-  singleImageBox = [
-    {
-      img: 'assets/img/gallery/gallery1.jpg',
-    },
-    {
-      img: 'assets/img/gallery/gallery2.jpg',
-    },
-    {
-      img: 'assets/img/gallery/gallery3.jpg',
-    },
-    {
-      img: 'assets/img/gallery/gallery4.jpg',
-    },
-    {
-      img: 'assets/img/gallery/gallery5.jpg',
-    },
-  ];
+
 
   customOptions: OwlOptions = {
     loop: true,

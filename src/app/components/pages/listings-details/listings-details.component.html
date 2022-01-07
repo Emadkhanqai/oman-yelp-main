@@ -189,9 +189,13 @@
             <div class="gallery-slides">
               <owl-carousel-o [options]="galleryOptions">
                 <ng-template carouselSlide *ngFor="let Image of singleImageBox">
-                  <div class="single-image-box">
-                    <img [src]="Image.img" alt="image" />
+                 
+                  <div *ngIf="Image">
+                    <div class="single-image-box">
+                      <img [src]="Image" alt="image" />
+                    </div>
                   </div>
+                 
                 </ng-template>
               </owl-carousel-o>
             </div>
@@ -324,7 +328,7 @@
                       <div class="d-flex">
                         <img src="assets/img/user1.jpg" alt="image" />
                         <div class="title">
-                          <h4>{{ Content.authorName }}</h4>
+                          <h4>{{ Content.feedbackBy }}</h4>
                           <span>{{ Content.location }}</span>
                         </div>
                       </div>
@@ -340,10 +344,7 @@
                         <span class="bx bxs-star checked"></span>
                       </div>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Quis ipsum suspendisse ultrices gravida.
-                        Risus commodo maecenas accumsan lacus vel facilisis.
+                        {{ Content.feedback }}
                       </p>
                       <div class="row m-0">
                         <div class="col-lg-8 col-md-8 col-8 col-sm-8 p-0">
