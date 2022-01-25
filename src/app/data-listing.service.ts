@@ -95,10 +95,10 @@ export class DataListingService {
   singleListingsItem = [
     {
       featured: true,
-      mainImg: 'assets/img/listings/listings9.jpg',
+      mainImg: 'assets/img/listings/dentalThumbnail.jpg',
       mainImg_single: [
         {
-          img: 'assets/img/listings/hospital_details.jpg',
+          img: 'assets/img/listings/dentalCover.jpg',
         },
       ],
       categoryLink: 'listing-detail',
@@ -108,20 +108,24 @@ export class DataListingService {
       articleId: 1,
       icon: 'flaticon-heart-1',
       location: 'Muscat',
-      title: 'Roshan Clinic',
+      title: 'Roshan Dental Clinic',
       price: 'Start From: $121',
       detailsLink: 'listing-detail',
       authorImg: 'assets/img/user3.jpg',
       authorName: 'James',
       description:
-        'Roshan Clinic at Ruwi, Muscat is a multi-specialty clinic featuring highly proficient and well experienced team of doctors. The clinic offers outpatient, inpatient, day-care and emergency care in a broad range of specialties. High-quality patient care is the key specialty of our clinic.',
+        'Roshan Dental Clinic at Ruwi, Muscat is a multi-specialty clinic featuring highly proficient and well experienced team of doctors. The clinic offers outpatient, inpatient, day-care and emergency care in a broad range of specialties. High-quality patient care is the key specialty of our clinic.',
       openORclose: 'Open Now',
       sponsored: true,
       feedbackBy: 'Yasmeen',
       feedback:
         'One of the best specialty clinics in Muscat. Easy access to the doctor for consultation, affordable tests and excellent customer service is the key at this clinic.',
       extraClass: 'status-open',
-      gallery: ['assets/img/gallery/g17.png', 'assets/img/gallery/g18.png', 'assets/img/gallery/g19.png'],
+      gallery: [
+        'assets/img/gallery/g17.png',
+        'assets/img/gallery/g18.png',
+        'assets/img/gallery/g19.png',
+      ],
       rating: [
         {
           icon: 'bx bxs-star',
@@ -140,6 +144,11 @@ export class DataListingService {
         },
       ],
       ratingCount: '18',
+      servicesOffered: [
+        'Parking Street to Braces',
+        'Vegan Options to Dental implants and accessories',
+        'Kids Activities to Dental Checkup',
+      ],
     },
 
     {
@@ -170,7 +179,11 @@ export class DataListingService {
       openORclose: 'Open Now',
       sponsored: true,
       extraClass: 'status-open',
-      gallery: ['assets/img/gallery/g20.png', 'assets/img/gallery/g21.png', 'assets/img/gallery/g22.png'],
+      gallery: [
+        'assets/img/gallery/g20.png',
+        'assets/img/gallery/g21.png',
+        'assets/img/gallery/g22.png',
+      ],
       rating: [
         {
           icon: 'bx bxs-star',
@@ -377,7 +390,7 @@ export class DataListingService {
       articleId: 7,
       icon: 'flaticon-heart-1',
       location: 'Muscat',
-      title: 'Badr Hospital',
+      title: 'Badr Clinic',
       price: 'Start From: $121',
       detailsLink: 'listing-detail',
       authorImg: 'assets/img/user3.jpg',
@@ -409,7 +422,13 @@ export class DataListingService {
         },
       ],
       ratingCount: '18',
+      servicesOffered: [
+        'Parking Street to Nursing care',
+        'Vegan Options to Child Care',
+        'Kids Activities Nearby Specialty Clinic',
+      ],
     },
+
     {
       featured: false,
       mainImg: 'assets/img/listings/listings9.jpg',
@@ -542,10 +561,10 @@ export class DataListingService {
 
     {
       featured: true,
-      mainImg: 'assets/img/listings/hotel.jpg',
+      mainImg: 'assets/img/listings/palaceThumbnail.jpg',
       mainImg_single: [
         {
-          img: 'assets/img/listings/hotel_details.jpg',
+          img: 'assets/img/listings/palaceDetails.jpg',
         },
       ],
       categoryLink: 'listing-detail',
@@ -1599,7 +1618,7 @@ export class DataListingService {
       articleId: 35,
       icon: 'flaticon-heart-1',
       location: 'Wadi Shab',
-      title: 'Wadi Shab',
+      title: 'Social Media Dukan ',
       price: 'Start From: $121',
       detailsLink: 'listing-detail',
       authorImg: 'assets/img/user3.jpg',
@@ -1626,6 +1645,11 @@ export class DataListingService {
         },
       ],
       ratingCount: '18',
+      servicesOffered: [
+        'Parking to Online',
+        'Vegan to Authentic Fragrance',
+        'Kids to Home Delivery',
+      ],
     },
 
     {
@@ -2636,7 +2660,12 @@ export class DataListingService {
       detailsLink: 'listing-detail',
       authorImg: 'assets/img/user3.jpg',
       authorName: 'James',
-      gallery: ['assets/img/gallery/g1.png', 'assets/img/gallery/g2.png', 'assets/img/gallery/g3.png', 'assets/img/gallery/g4.png'],
+      gallery: [
+        'assets/img/gallery/g1.png',
+        'assets/img/gallery/g2.png',
+        'assets/img/gallery/g3.png',
+        'assets/img/gallery/g4.png',
+      ],
       description:
         'Muna Noor Engineering & Contracting (MNEC) is one of the many accomplished companies founded by the Muna Noor International LLC Group. With 26 years of experience, MNEC is a leader in its field with a strong reputation for excellence. We service both the public and private sectors and have completed many diverse and major projects throughout Oman.',
       openORclose: 'Open Now',
@@ -2663,6 +2692,11 @@ export class DataListingService {
         },
       ],
       ratingCount: '18',
+      servicesOffered: [
+        'Parking Street to Complete Contracting services',
+        'Vegan Options to Free Estimate',
+        'Kids Activities to Work Warranty',
+      ],
     },
 
     {
@@ -2690,7 +2724,11 @@ export class DataListingService {
         'Plumbing maintenance. We can meet all your small plumbing repair needs. <br/>      What is Included: <br/>      Repair of visible broken pipes <br/>      or Repair of over-flowing toilets <br/>      or Rectification of low or no water pressure <br/>      or Clear clogged waste pipes <br/>      or Fix drainage blocks in showers and sinks <br/>      or Identify and replace corroded or faulty flexible hoses <br/>      or Repair or replace faulty gate valves and faulty mixer tap <br/>      or Replacements of water pumps and pressure kits',
       openORclose: 'Open Now',
       feedbackBy: 'Amjad',
-      gallery: ['assets/img/gallery/g5.png', 'assets/img/gallery/g6.png', 'assets/img/gallery/g7.png'],
+      gallery: [
+        'assets/img/gallery/g5.png',
+        'assets/img/gallery/g6.png',
+        'assets/img/gallery/g7.png',
+      ],
       feedback:
         'The team came around and gave me a good quote, compared to the others, exactly what I thought the job would cost. Came around a few days later and fixed the leak promptly and neatly. I was very pleased with their work. I also recommended them to my neighbors, they had a leak as well, and they had the same good experience with this company.',
       sponsored: true,
@@ -2741,7 +2779,11 @@ export class DataListingService {
       openORclose: 'Open Now',
       sponsored: true,
       feedbackBy: 'Mundhar',
-      gallery: ['assets/img/gallery/g8.png', 'assets/img/gallery/g9.png', 'assets/img/gallery/g10.png'],
+      gallery: [
+        'assets/img/gallery/g8.png',
+        'assets/img/gallery/g9.png',
+        'assets/img/gallery/g10.png',
+      ],
       feedback:
         "Whenever I send an email, I get a clear and correct response. Over the phone, I have been given incorrect information and don't feel satisfied with the answers I get when I hang up.” “I have not had to contact your organization for any reason. Though, I will say that communication from your end of things is outstanding! All of the emails and other correspondence I receive from the company to keep us all in the loop even if it doesn't directly or immediately affect us. I love it! Thank you.”",
       extraClass: 'status-open',
@@ -2791,7 +2833,11 @@ export class DataListingService {
       openORclose: 'Open Now',
       sponsored: true,
       feedbackBy: 'Saud',
-      gallery: ['assets/img/gallery/g11.png', 'assets/img/gallery/g12.png', 'assets/img/gallery/g13.png'],
+      gallery: [
+        'assets/img/gallery/g11.png',
+        'assets/img/gallery/g12.png',
+        'assets/img/gallery/g13.png',
+      ],
       feedback:
         'Best honey in town. I am ready to buy again and recommend this honey to all my family and friends.',
       extraClass: 'status-open',
@@ -2813,6 +2859,11 @@ export class DataListingService {
         },
       ],
       ratingCount: '18',
+      servicesOffered: [
+        'Parking to Fragrance',
+        'Vegan to Bespoke arrangement',
+        'Kids to Beauty and purpose',
+      ],
     },
 
     {
@@ -2820,7 +2871,7 @@ export class DataListingService {
       mainImg: 'assets/img/listings/listings25.jpg',
       mainImg_single: [
         {
-          img: 'assets/img/listings/clinic_25_details.jpg',
+          img: 'assets/img/listings/clinic_24_details.jpg',
         },
       ],
       categoryLink: 'listing-detail',
@@ -2831,7 +2882,7 @@ export class DataListingService {
       phone: '93948316',
       icon: 'flaticon-heart-1',
       location: 'Muscat',
-      title: 'Dukan',
+      title: 'AlDukaken',
       price: 'Start From: $121',
       detailsLink: 'listing-detail',
       authorImg: 'assets/img/user3.jpg',
@@ -2859,6 +2910,11 @@ export class DataListingService {
         },
       ],
       ratingCount: '18',
+      servicesOffered: [
+        'Parking to Flags and Banners ',
+        'Vegan to Home Delivery',
+        'Kids to Special Price',
+      ],
     },
 
     {
@@ -2866,7 +2922,7 @@ export class DataListingService {
       mainImg: 'assets/img/listings/listings26.jpg',
       mainImg_single: [
         {
-          img: 'assets/img/listings/clinic_26_details.jpg',
+          img: 'assets/img/listings/clinic_24_details.jpg',
         },
       ],
       categoryLink: 'listing-detail',
@@ -2877,7 +2933,7 @@ export class DataListingService {
       phone: '93948316',
       icon: 'flaticon-heart-1',
       location: 'Muscat',
-      title: 'Dukan',
+      title: 'AlDukaken',
       price: 'Start From: $121',
       detailsLink: 'listing-detail',
       authorImg: 'assets/img/user3.jpg',
@@ -2887,7 +2943,11 @@ export class DataListingService {
       openORclose: 'Open Now',
       sponsored: true,
       feedbackBy: 'Jasim',
-      gallery: ['assets/img/gallery/g14.png', 'assets/img/gallery/g15.png', 'assets/img/gallery/g16.png'],
+      gallery: [
+        'assets/img/gallery/g14.png',
+        'assets/img/gallery/g15.png',
+        'assets/img/gallery/g16.png',
+      ],
       feedback:
         'Excellent quality honey is available at this store with lots of excellent service. One can visit the store or make an order online.',
       extraClass: 'status-open',
@@ -2909,6 +2969,11 @@ export class DataListingService {
         },
       ],
       ratingCount: '18',
+      servicesOffered: [
+        'Parking to Flags and Banners ',
+        'Vegan to Home Delivery',
+        'Kids to Special Price',
+      ],
     },
     // SUB CATEGORY END
   ];

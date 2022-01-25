@@ -147,15 +147,12 @@
 
           <h3>Services Offered</h3>
           <ul class="amenities-list">
-            <li>
-              <span><i class="bx bx-check"></i> Parking Street</span>
+            
+            <li *ngFor="let item of Content.servicesOffered; index as i;">
+              <span><i class="bx bx-check"></i> {{item}}</span>
             </li>
-            <li>
-              <span><i class="bx bx-check"></i> Vegan Options</span>
-            </li>
-            <li>
-              <span><i class="bx bx-check"></i> Kids Activities Nearby</span>
-            </li>
+
+
             <li>
               <span><i class="bx bx-check"></i> Accepts Apple Pay</span>
             </li>
