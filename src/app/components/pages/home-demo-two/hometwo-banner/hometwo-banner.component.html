@@ -7,12 +7,7 @@
           <h1>
             {{ Content.title }}
             <ngx-typed-js
-              [strings]="[
-
-                'Health Care',
-                'Home Services',
-                'Social Media '
-              ]"
+              [strings]="['Health Care', 'Home Services', 'Social Media ']"
               [typeSpeed]="100"
               [loop]="true"
               [backSpeed]="100"
@@ -80,14 +75,24 @@
             </div>
           </form>
           <ul class="popular-search-list">
-            <li style="color: wheat;">Popular:</li>
-            <li *ngFor="let List of Content.popularSearchList">
-              <a
-                routerLink="/{{ List.link + '/' + List.id }}"
-                style="color: white"
-                >{{ List.name }}</a
-              >
+            <li style="color: wheat">Popular:</li>
+
+            <li>
+              <a routerLink="/listing-view/1" style="color: white">Health Care</a>
             </li>
+            <li style="position: relative;">
+              <a  (click)="showDrp()" style="color: white; cursor: pointer;">Home Services</a>
+              <div class="custom-select" *ngIf="showDrpNow">
+                <a *ngFor="let web of websiteList" href="#">
+                  {{ web.name }}
+                </a>
+              </div>
+            </li>
+            <li>
+              <a routerLink="/listing-view/9" style="color: white">Social Media</a>
+            </li>
+
+           
           </ul>
         </div>
       </div>

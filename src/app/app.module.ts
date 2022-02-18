@@ -4,7 +4,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SelectDropDownModule } from 'ngx-select-dropdown';
 import { NgxTypedJsModule } from 'ngx-typed-js';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -164,6 +164,7 @@ import { ForgotPasswordComponent } from './components/pages/forgot-password/forg
     SelectDropDownModule,
     NgxTypedJsModule,
     FormsModule,
+    ReactiveFormsModule,
     NgxPaginationModule,
     GoogleMapsModule
   ],

@@ -145,9 +145,9 @@ export class DataListingService {
       ],
       ratingCount: '18',
       servicesOffered: [
-        'Parking Street to Braces',
-        'Vegan Options to Dental implants and accessories',
-        'Kids Activities to Dental Checkup',
+        'Braces',
+        'Dental implants and accessories',
+        'Dental Checkup',
       ],
     },
 
@@ -2693,9 +2693,9 @@ export class DataListingService {
       ],
       ratingCount: '18',
       servicesOffered: [
-        'Parking Street to Complete Contracting services',
-        'Vegan Options to Free Estimate',
-        'Kids Activities to Work Warranty',
+        'Complete Contracting services',
+        'Free Estimate',
+        'Work Warranty',
       ],
     },
 
@@ -2860,9 +2860,9 @@ export class DataListingService {
       ],
       ratingCount: '18',
       servicesOffered: [
-        'Parking to Fragrance',
-        'Vegan to Bespoke arrangement',
-        'Kids to Beauty and purpose',
+        'Fragrance',
+        'Bespoke arrangement',
+        'Beauty and purpose',
       ],
     },
 

@@ -54,6 +54,51 @@ export class HometwoBannerComponent implements OnInit {
     placeholder: 'location',
   };
 
+  websiteList = [
+    {
+      name: 'Air Condition and Heating',
+      id: 1,
+    },
+    {
+      name: 'Contractors',
+      id: 2,
+    },
+    {
+      name: 'Electricians',
+      id: 3,
+    },
+    {
+      name: 'Home Cleaners',
+      id: 4,
+    },
+    {
+      name: 'Land Scrapers',
+      id: 5,
+    },
+    {
+      name: 'Locksmith',
+      id: 6,
+    },
+    {
+      name: 'Movers',
+      id: 7,
+    },
+    {
+      name: 'Painters',
+      id: 8,
+    },
+    {
+      name: 'Plumbers',
+      id: 9,
+    },
+  ];
+
+  showDrpNow = false;
+
+  showDrp() {
+    this.showDrpNow = !this.showDrpNow;
+  }
+
   searchChange($event) {
     console.log($event);
   }
